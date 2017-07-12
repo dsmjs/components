@@ -1,0 +1,40 @@
+{
+  "name": "@dsmjs/components",
+  "description": "React components for the dsmjs.com site",
+  "license": "MIT",
+  "author": "dsmJS",
+  "maintainers": [
+    "Matt Travi <npm@travi.org> (https://matt.travi.org/)"
+  ],
+  "repository": "dsmjs/components",
+  "bugs": "https://github.com/dsmjs/components/issues",
+  "homepage": "https://github.com/dsmjs/components#readme",
+  "scripts": {
+    "lint:md": "globstar --node -- markdownlint **/*.md",
+    "tests:unit": "mocha --recursive test/unit",
+    "test": "run-s lint:* coverage",
+    "coverage": "nyc run-s tests:unit",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "npm test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@travi/any": "1.2.2",
+    "chai": "4.0.2",
+    "cz-conventional-changelog": "2.0.0",
+    "globstar": "1.0.0",
+    "husky": "0.14.3",
+    "markdownlint-cli": "0.3.1",
+    "mocha": "3.4.2",
+    "npm-run-all": "4.0.2",
+    "nyc": "11.0.3",
+    "validate-commit-msg": "2.12.2"
+  }
+}
