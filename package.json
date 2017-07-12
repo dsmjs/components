@@ -11,7 +11,7 @@
   "homepage": "https://github.com/dsmjs/components#readme",
   "scripts": {
     "lint:md": "globstar --node -- markdownlint **/*.md",
-    "tests:unit": "mocha --recursive test/unit",
+    "tests:unit": "mocha --recursive src/**/test.js",
     "test": "run-s lint:* coverage",
     "coverage": "nyc run-s tests:unit",
     "commitmsg": "validate-commit-msg",
@@ -27,14 +27,25 @@
   },
   "devDependencies": {
     "@travi/any": "1.2.2",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1",
+    "babel-register": "6.24.1",
     "chai": "4.0.2",
     "cz-conventional-changelog": "2.0.0",
+    "enzyme": "2.9.1",
     "globstar": "1.0.0",
     "husky": "0.14.3",
     "markdownlint-cli": "0.3.1",
     "mocha": "3.4.2",
     "npm-run-all": "4.0.2",
     "nyc": "11.0.3",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-test-renderer": "15.6.1",
     "validate-commit-msg": "2.12.2"
+  },
+  "peerDependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
