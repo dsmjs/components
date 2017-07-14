@@ -18,7 +18,7 @@
     "precommit": "npm test",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "gh-pages --silent -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/"
+    "deploy": "gh-pages -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/"
   },
   "config": {
     "commitizen": {
