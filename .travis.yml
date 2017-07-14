@@ -8,7 +8,7 @@ branches:
 before_deploy:
   - npm run build-storybook
   - git config --global user.email "$GIT_EMAIL"
-  - git config --global user.email "dsmJS Bot"
+  - git config --global user.name "dsmJS Bot"
 deploy:
   - skip_cleanup: true
     provider: script
