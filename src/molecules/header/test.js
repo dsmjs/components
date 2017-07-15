@@ -7,9 +7,10 @@ suite('header', () => {
   test('that the header renders', () => {
     const wrapper = shallow(<Header />);
     const link = wrapper.find('a');
-    const logo = link.find('Logo');
 
     assert.equal(link.prop('href'), '/');
-    assert.isTrue(logo.exists());
+    assert.isTrue(link.find('Logo').exists());
+    assert.isTrue(wrapper.find('DsmJsBar').exists());
+    assert.isTrue(wrapper.find('RecurrenceBar').exists());
   });
 });
