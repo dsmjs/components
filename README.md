@@ -1,5 +1,7 @@
 # components
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dsmjs/components.svg)](https://greenkeeper.io/)
+
 React components for the [dsmjs.com](https://dsmjs.com) site
 
 [![license](https://img.shields.io/github/license/dsmjs/components.svg)](LICENSE)
