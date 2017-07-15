@@ -1,4 +1,5 @@
 language: node_js
+dist: trusty
 notifications:
   email: false
 after_install: npm ls >/dev/null
