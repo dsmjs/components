@@ -14,6 +14,7 @@ deploy:
   - skip_cleanup: true
     provider: script
     script: npm run deploy
+after_success: npm run coverage:report
 env:
   global:
     secure: ogrRqV1ZSVAIGzS9GLhtX7eJDiP9DnsE+rqwIaKpIERY203RwYKD3EoTOAMnZcG1pe6Zcs2JHazflAOECgMdsb1c6xTQayNCC80K/BuqH0T2YMfB6AU5dLQipSKlbHhRafJjx5BIJ7PGAzZZXXSGICPc7rc3/9I0+o5hKFCw5717qDvmK16zTAE4Dbyfeks4aNf+fNFwrQXL1dXEUZHu4gZDvFUwvIHzmWl4GrLqtopwMdKvvWE2b8xKla+Ka1fsO/HmyVe85v+zDVpiC9Nfn5JpuNOfdKMetQRc+B/7jqMY9VO6bI8dYeCzleoHw2K8LZ5k6hgV97xHycqRvbyKHFPxFQAP55yNzg3FHg3ekwv6f3++Og2VJdtdCftwDcuHS/7dFrQ3tsUlz6L8fCr9GG3Ae4CxWMe2Vzr4/S/sVwmVWOD/GSoOCLGuxG8dqvS/7y+r/eOn7MBIRfLB7GxQ39QzY6bPE3+Kl2l+Op0A1sF8K2EM9SgoWBZS3ctVg+DnSP5zSs2p50EF46ST8izcnnb9JMCEhUoavvzhWDTOrzlQhTB+eQayLlbnPdIUDnctrezbpkG7io/7f0p2cwhGXvH2nLUKQH7KYDB0I0h6Oly20c+EbVWxzosDARekjfHRzeygc+7F2aaLerWBEiWWEQtwNUq+y6YHUtR+ZhST86c=
