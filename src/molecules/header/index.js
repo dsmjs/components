@@ -7,12 +7,12 @@ import LocationBar from '../../atoms/header-bars/location';
 
 export default function Header({sponsor, location}) {
   return (
-    <div>
+    <header>
       <a href="/"><Logo /></a>
       <DsmJsBar />
       <SponsorBar sponsor={sponsor} />
       <LocationBar location={location} />
       <RecurrenceBar />
-    </div>
+    </header>
   );
 }
