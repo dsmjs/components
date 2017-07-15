@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default function SiteNavigation() {
+const listItemStyles = {padding: '0.5em'};
+
+export default function SiteNavigation({linkStyles = {}}) {
   return (
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li><a href="/archive">Past Meetings</a></li>
+    <ol style={{listStyle: 'none', display: 'flex'}}>
+      <li style={listItemStyles}><a style={linkStyles} href="/">Home</a></li>
+      <li style={listItemStyles}><a style={linkStyles} href="/archive">Past Meetings</a></li>
     </ol>
   );
 }
