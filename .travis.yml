@@ -7,7 +7,6 @@ branches:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
 after_install: npm ls >/dev/null
 before_script: npm run greenkeeper:update-lockfile
-before_script: npm run greenkeeper:update-lockfile
 before_deploy:
   - npm run build-storybook
   - git config --global user.email "$GIT_EMAIL"
