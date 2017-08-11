@@ -1,11 +1,12 @@
 import React from 'react';
+import glamorous from 'glamorous';
 import styles from '../styles.json';
 
-const style = {
+const SponsorBarDiv = glamorous.div({
   ...styles,
   background: '#6C9380'
-};
+});
 
 export default function SponsorBar({sponsor}) {
-  return <div style={style}>{sponsor}</div>;
+  return <SponsorBarDiv>{sponsor}</SponsorBarDiv>;
 }

@@ -60,5 +60,8 @@
   "peerDependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "dependencies": {
+    "glamorous": "4.1.0"
   }
 }

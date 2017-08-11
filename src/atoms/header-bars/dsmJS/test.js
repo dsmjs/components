@@ -7,6 +7,6 @@ suite('dsmJS bar', () => {
   test('that dsmJS is shown', () => {
     const wrapper = shallow(<DsmJsBar />);
 
-    assert.equal(wrapper.text(), 'dsmJS');
+    assert.equal(wrapper.dive().text(), 'dsmJS');
   });
 });
