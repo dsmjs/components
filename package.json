@@ -35,7 +35,7 @@
     "@storybook/addon-actions": "3.2.6",
     "@storybook/addon-links": "3.2.0",
     "@storybook/react": "3.2.8",
-    "@travi/any": "1.4.0",
+    "@travi/any": "1.4.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.0",
     "babel-preset-react": "6.24.1",
