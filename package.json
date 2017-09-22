@@ -32,7 +32,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.2.6",
+    "@storybook/addon-actions": "3.2.10",
     "@storybook/addon-links": "3.2.6",
     "@storybook/react": "3.2.8",
     "@travi/any": "1.4.2",
