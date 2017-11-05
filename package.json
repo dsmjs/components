@@ -48,7 +48,7 @@
     "globstar": "1.0.0",
     "greenkeeper-lockfile": "1.9.0",
     "husky": "0.14.3",
-    "markdownlint-cli": "0.3.1",
+    "markdownlint-cli": "0.4.0",
     "mocha": "3.5.3",
     "npm-run-all": "4.1.1",
     "nyc": "11.2.1",
