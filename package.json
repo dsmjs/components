@@ -54,7 +54,7 @@
     "nyc": "11.2.1",
     "react": "15.6.2",
     "react-dom": "15.6.2",
-    "react-test-renderer": "16.0.0",
+    "react-test-renderer": "16.1.0",
     "validate-commit-msg": "2.14.0"
   },
   "peerDependencies": {
