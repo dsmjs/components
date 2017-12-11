@@ -2,6 +2,8 @@
   "name": "@dsmjs/components",
   "description": "React components for the dsmjs.com site",
   "license": "MIT",
+  "main": "lib/components.cjs.js",
+  "module": "lib/components.es.js",
   "author": "dsmJS",
   "maintainers": [
     "Matt Travi <npm@travi.org> (https://matt.travi.org/)"
