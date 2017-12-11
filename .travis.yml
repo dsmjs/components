@@ -15,7 +15,9 @@ deploy:
 - skip_cleanup: true
   provider: script
   script: npm run deploy
-after_success: npm run coverage:report
+after_success:
+- npm run coverage:report
+- npm run semantic-release
 after_script: npm run greenkeeper:upload-lockfile
 env:
   global:
