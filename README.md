@@ -2,7 +2,7 @@
 
 React components for the [dsmjs.com](https://dsmjs.com) site
 
-[![npm](https://img.shields.io/npm/v/@dsmjs/site.svg?maxAge=2592000)](https://www.npmjs.com/package/@dsmjs/site)
+[![npm](https://img.shields.io/npm/v/@dsmjs/components.svg?maxAge=2592000)](https://www.npmjs.com/package/@dsmjs/components)
 [![license](https://img.shields.io/github/license/dsmjs/components.svg)](LICENSE)
 
 [![Build Status](https://img.shields.io/travis/dsmjs/components.svg?style=flat&branch=master)](https://travis-ci.org/dsmjs/components)
