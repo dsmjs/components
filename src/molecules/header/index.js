@@ -8,7 +8,7 @@ import LocationBar from '../../atoms/header-bars/location';
 export default function Header({sponsor, location}) {
   return (
     <header>
-      <a href="/"><Logo styleOverrides={{float: 'left', height: '8em'}} /></a>
+      <a href="/"><Logo styleOverrides={{float: 'left', height: 192}} /></a>
       <DsmJsBar />
       <SponsorBar sponsor={sponsor} />
       <LocationBar location={location} />
