@@ -2,6 +2,7 @@
   "name": "@dsmjs/components",
   "description": "React components for the dsmjs.com site",
   "license": "MIT",
+  "version": "0.0.0-semantically-released",
   "main": "lib/components.cjs.js",
   "module": "lib/components.es.js",
   "author": "dsmJS",
