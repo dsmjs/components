@@ -4,7 +4,6 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
   input: 'src/index.js',
-  sourcemap: true,
   external: [
     'react',
     'react-helmet',
@@ -28,7 +27,7 @@ export default {
     })
   ],
   output: [
-    {file: 'lib/components.cjs.js', format: 'cjs'},
-    {file: 'lib/components.es.js', format: 'es'}
+    {file: 'lib/components.cjs.js', format: 'cjs', sourcemap: true},
+    {file: 'lib/components.es.js', format: 'es', sourcemap: true}
   ]
 };
