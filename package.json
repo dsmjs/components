@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "3.3.12",
-    "@storybook/addon-links": "3.3.12",
+    "@storybook/addon-links": "3.3.13",
     "@storybook/react": "3.3.12",
     "@travi/any": "1.7.2",
     "babel-core": "6.26.0",
