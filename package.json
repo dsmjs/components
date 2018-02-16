@@ -15,7 +15,8 @@
   "scripts": {
     "clean": "rimraf lib/",
     "lint:md": "globstar --node -- markdownlint **/*.md",
-    "tests:unit": "mocha --recursive src/**/test.js",
+    "lint:js": "eslint . .storybook --cache",
+    "tests:unit": "mocha --recursive test/unit/**/*-test.js",
     "test": "run-s lint:* coverage",
     "coverage": "nyc run-s tests:unit",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -44,6 +45,7 @@
     "@storybook/addon-links": "3.3.13",
     "@storybook/react": "3.3.13",
     "@travi/any": "1.7.2",
+    "@travi/eslint-config-travi": "1.6.7",
     "babel-core": "6.26.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.13",
@@ -80,6 +82,7 @@
   },
   "dependencies": {
     "glamor": "2.20.40",
-    "glamorous": "4.11.4"
+    "glamorous": "4.11.4",
+    "prop-types": "15.6.0"
   }
 }

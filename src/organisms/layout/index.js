@@ -1,4 +1,5 @@
 import React from 'react';
+import {string, node} from 'prop-types';
 import {Div} from 'glamorous';
 import Header from '../../molecules/header';
 import Footer from '../footer';
@@ -13,3 +14,9 @@ export default function Layout({sponsor, location, children}) {
     </Div>
   );
 }
+
+Layout.propTypes = {
+  sponsor: string.isRequired,
+  location: string.isRequired,
+  children: node
+};

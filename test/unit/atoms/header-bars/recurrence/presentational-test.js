@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
-import RecurrenceBar from './index';
+import RecurrenceBar from '../../../../../src/atoms/header-bars/recurrence/index';
 
 suite('Meeting Recurrence bar', () => {
   test('that the recurrence schedule is shown', () => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import {string} from 'prop-types';
 import Logo from '../../atoms/logo';
 import DsmJsBar from '../../atoms/header-bars/dsmJS';
 import RecurrenceBar from '../../atoms/header-bars/recurrence';
@@ -16,3 +17,8 @@ export default function Header({sponsor, location}) {
     </header>
   );
 }
+
+Header.propTypes = {
+  sponsor: string.isRequired,
+  location: string.isRequired
+};

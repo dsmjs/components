@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
-import Header from './index';
+import Header from '../../../../src/molecules/header/index';
 
 suite('header', () => {
   test('that the header renders', () => {

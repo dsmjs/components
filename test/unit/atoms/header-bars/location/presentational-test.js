@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
-import LocationBar from './index';
+import LocationBar from '../../../../../src/atoms/header-bars/location/index';
 
 suite('location bar', () => {
   test('that the location is shown', () => {

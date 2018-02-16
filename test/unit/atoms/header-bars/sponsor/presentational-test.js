@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
-import SponsorBar from './index';
+import SponsorBar from '../../../../../src/atoms/header-bars/sponsor/index';
 
 suite('sponsor bar', () => {
   test('that the sponsor is shown', () => {

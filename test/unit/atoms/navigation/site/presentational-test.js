@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
-import SiteNavigation from './index';
+import SiteNavigation from '../../../../../src/atoms/navigation/site/index';
 
 suite('site navigation', () => {
   test('that the links are listed', () => {

@@ -21,7 +21,7 @@ export default {
       exclude: ['./node_modules/**'],
       presets: [['env', {targets: {node: 'current', browsers: ['last 2 versions']}, modules: false}], 'react'],
       plugins: [
-        ["transform-object-rest-spread", { "useBuiltIns": true }],
+        ['transform-object-rest-spread', {useBuiltIns: true}],
         ['transform-react-remove-prop-types', {mode: 'wrap'}]
       ]
     })

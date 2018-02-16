@@ -3,7 +3,7 @@ import {Img} from 'glamorous';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
-import Logo from './index';
+import Logo from '../../../../src/atoms/logo/index';
 
 suite('logo test', () => {
   test('that the png is loaded remotely', () => {

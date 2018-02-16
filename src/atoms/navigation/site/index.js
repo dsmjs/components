@@ -1,8 +1,9 @@
 import React from 'react';
+import {shape} from 'prop-types';
 
 const listItemStyles = {padding: '0.5em'};
 
-export default function SiteNavigation({linkStyles = {}}) {
+export default function SiteNavigation({linkStyles}) {
   return (
     <ol style={{listStyle: 'none', display: 'flex'}}>
       <li style={listItemStyles}><a style={linkStyles} href="/">Home</a></li>
@@ -10,3 +11,7 @@ export default function SiteNavigation({linkStyles = {}}) {
     </ol>
   );
 }
+
+SiteNavigation.propTypes = {linkStyles: shape};
+SiteNavigation.defaultProps = {linkStyles: {}};
+

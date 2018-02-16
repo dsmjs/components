@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
-import Layout from './index';
+import Layout from '../../../../src/organisms/layout';
 
 suite('layout', () => {
   function Children() {
@@ -13,11 +13,7 @@ suite('layout', () => {
     const sponsor = any.string();
     const location = any.string();
 
-    const wrapper = shallow(
-      <Layout sponsor={sponsor} location={location}>
-        <Children />
-      </Layout>
-    );
+    const wrapper = shallow(<Layout sponsor={sponsor} location={location}><Children /></Layout>);
 
     const header = wrapper.find('Header');
     assert.equal(header.prop('sponsor'), sponsor);
