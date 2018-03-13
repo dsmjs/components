@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "3.3.15",
-    "@storybook/addon-links": "3.3.13",
+    "@storybook/addon-links": "3.3.15",
     "@storybook/react": "3.3.15",
     "@travi/any": "1.7.2",
     "@travi/eslint-config-travi": "1.6.10",
@@ -72,8 +72,8 @@
     "rollup": "0.56.5",
     "rollup-plugin-babel": "3.0.3",
     "rollup-plugin-json": "2.3.0",
-    "rollup-plugin-node-resolve": "3.1.0",
-    "semantic-release": "15.0.2",
+    "rollup-plugin-node-resolve": "3.2.0",
+    "semantic-release": "15.0.3",
     "validate-commit-msg": "2.14.0"
   },
   "peerDependencies": {
