@@ -3,4 +3,4 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import RecurrenceBar from './index';
 
-storiesOf('Meeting Recurrence Bar', module).add('default', () => <RecurrenceBar />);
+storiesOf('Atoms/Header Bars/Meeting Recurrence Bar', module).add('default', () => <RecurrenceBar />);
