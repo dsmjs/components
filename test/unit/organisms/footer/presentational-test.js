@@ -8,5 +8,6 @@ suite('footer', () => {
     const wrapper = shallow(<Footer />);
 
     assert.isTrue(wrapper.find('NavigationBar').exists());
+    assert.isTrue(wrapper.find('CopyrightBar').exists());
   });
 });
