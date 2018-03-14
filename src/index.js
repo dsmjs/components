@@ -1,1 +1,3 @@
-export {default as Layout} from './organisms/layout';   // eslint-disable-line import/prefer-default-export
+export {default as Layout} from './organisms/layout';
+export {default as Meeting} from './organisms/meeting';
+export {default as CurrentMeeting} from './organisms/meeting/current';
