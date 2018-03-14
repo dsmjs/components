@@ -12,12 +12,13 @@ before_deploy:
 - git config --global user.email "$GIT_EMAIL"
 - git config --global user.name "dsmJS Bot"
 deploy:
-- skip_cleanup: true
-  provider: script
+- provider: script
+  skip_cleanup: true
+  script: npm run semantic-release
+- provider: script
+  skip_cleanup: true
   script: npm run deploy
-after_success:
-- npm run coverage:report
-- npm run semantic-release
+after_success: npm run coverage:report
 after_script: npm run greenkeeper:upload-lockfile
 env:
   global:
