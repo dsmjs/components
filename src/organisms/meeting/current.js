@@ -3,10 +3,10 @@ import {shape} from 'prop-types';
 import SponsorDetails from '../../molecules/sponsor-details';
 import Meeting from '.';
 
-export default function CurrentMeeting({meeting, sponsor}) {
+export default function CurrentMeeting({meeting, sponsor, host}) {
   return (
     <section>
-      <Meeting meeting={meeting} />
+      <Meeting meeting={meeting} host={host} />
       <SponsorDetails sponsor={sponsor} />
     </section>
   );
@@ -14,5 +14,6 @@ export default function CurrentMeeting({meeting, sponsor}) {
 
 CurrentMeeting.propTypes = {
   meeting: shape(),
-  sponsor: shape()
+  sponsor: shape(),
+  host: shape()
 };
