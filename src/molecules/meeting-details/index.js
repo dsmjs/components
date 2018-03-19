@@ -4,7 +4,7 @@ import {shape, string} from 'prop-types';
 export default function MeetingDetails({meeting, host}) {
   return (
     <div>
-      <h1>{meeting.date}</h1>
+      <h2>{meeting.date}</h2>
       <p>{meeting.time.start} - {meeting.time.end} @ {host.location}</p>
     </div>
   );
