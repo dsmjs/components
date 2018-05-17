@@ -41,7 +41,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.4.4",
+    "@storybook/addon-actions": "3.4.5",
     "@storybook/addon-links": "3.3.15",
     "@storybook/react": "3.4.4",
     "@travi/any": "1.7.5",
