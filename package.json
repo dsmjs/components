@@ -73,7 +73,7 @@
     "rollup-plugin-babel": "3.0.4",
     "rollup-plugin-json": "3.0.0",
     "rollup-plugin-node-resolve": "3.3.0",
-    "semantic-release": "15.5.4",
+    "semantic-release": "15.5.5",
     "validate-commit-msg": "2.14.0"
   },
   "peerDependencies": {
