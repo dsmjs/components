@@ -7,7 +7,7 @@ import globalStyles from '../../styles.json';
 
 export default function Layout({sponsor, location, children}) {
   return (
-    <Div css={{...globalStyles, marginTop: '1em', maxWidth: 1000, margin: '0 auto'}}>
+    <Div css={{...globalStyles, maxWidth: 1000, margin: '1em auto', backgroundColor: '#fff'}}>
       <Header sponsor={sponsor} location={location} />
       {children}
       <Footer />
