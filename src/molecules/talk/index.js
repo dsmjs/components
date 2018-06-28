@@ -5,7 +5,7 @@ export default function Talk({talk, content}) {
   return (
     <Fragment>
       <h1 style={{color: '#AD5472'}}>{talk.title}</h1>
-      <h3>{talk.speaker}</h3>
+      <h3>{talk.speaker.frontmatter.name}</h3>
       <div dangerouslySetInnerHTML={{__html: content}} />
     </Fragment>
   );
@@ -14,7 +14,11 @@ export default function Talk({talk, content}) {
 Talk.propTypes = {
   talk: shape({
     title: string,
-    speaker: string
+    speaker: shape({
+      frontmatter: shape({
+        name: string
+      })
+    })
   }),
   content: string
 };
