@@ -70,7 +70,7 @@
     "react-dom": "16.4.1",
     "react-test-renderer": "16.4.1",
     "rollup": "0.61.2",
-    "rollup-plugin-babel": "3.0.5",
+    "rollup-plugin-babel": "3.0.6",
     "rollup-plugin-json": "3.0.0",
     "rollup-plugin-node-resolve": "3.3.0",
     "semantic-release": "15.6.0",
