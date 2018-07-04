@@ -1,16 +1,12 @@
 import babel from 'rollup-plugin-babel';
 import json from 'rollup-plugin-json';
 import nodeResolve from 'rollup-plugin-node-resolve';
+import autoExternal from 'rollup-plugin-auto-external';
 
 export default {
   input: 'src/index.js',
-  external: [
-    'react',
-    'react-helmet',
-    'prop-types',
-    'glamorous'
-  ],
   plugins: [
+    autoExternal(),
     nodeResolve({
       module: true,
       jsnext: true
