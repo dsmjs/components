@@ -41,9 +41,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "4.0.0-alpha.11",
-    "@storybook/addon-links": "4.0.0-alpha.11",
-    "@storybook/react": "4.0.0-alpha.11",
+    "@storybook/addon-actions": "3.4.8",
+    "@storybook/addon-links": "3.4.8",
+    "@storybook/react": "3.4.8",
     "@travi/any": "1.7.5",
     "@travi/eslint-config-travi": "1.6.15",
     "babel-core": "6.26.3",
