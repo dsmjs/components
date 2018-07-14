@@ -29,8 +29,7 @@
     "deploy": "gh-pages -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/",
     "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
     "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload",
-    "prepublish": "run-s build",
-    "semantic-release": "semantic-release"
+    "prepublishOnly": "run-s build"
   },
   "config": {
     "commitizen": {
@@ -76,7 +75,6 @@
     "rollup-plugin-babel": "3.0.7",
     "rollup-plugin-json": "3.0.0",
     "rollup-plugin-node-resolve": "3.3.0",
-    "semantic-release": "15.7.1",
     "validate-commit-msg": "2.14.0"
   },
   "peerDependencies": {

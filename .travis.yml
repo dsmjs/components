@@ -14,7 +14,7 @@ before_deploy:
 deploy:
 - provider: script
   skip_cleanup: true
-  script: npm run semantic-release
+  script: npx semantic-release
 - provider: script
   skip_cleanup: true
   script: npm run deploy
