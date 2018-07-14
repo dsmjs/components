@@ -9,7 +9,7 @@ storiesOf('Molecules/Talk', module).add('default', () => (
   <Talk
     talk={{
       title: any.sentence(),
-      speaker: `${any.word()} ${any.word()}`,
+      speaker: {frontmatter: {name: `${any.word()} ${any.word()}`}},
       twitter: any.word(),
       slides: any.url()
     }}
