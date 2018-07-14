@@ -10,9 +10,9 @@ suite('header', () => {
     const location = any.string();
 
     const wrapper = shallow(<Header sponsor={sponsor} location={location} />);
-    const link = wrapper.find('a');
+    const link = wrapper.find('GatsbyLink');
 
-    assert.equal(link.prop('href'), '/');
+    assert.equal(link.prop('to'), '/');
     assert.isTrue(link.find('Logo').exists());
     assert.isTrue(wrapper.find('DsmJsBar').exists());
     assert.isTrue(wrapper.find('RecurrenceBar').exists());

@@ -58,6 +58,8 @@
     "cz-conventional-changelog": "2.1.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "gatsby": "1.9.273",
+    "gatsby-link": "1.6.45",
     "gh-pages": "1.2.0",
     "globstar": "1.0.0",
     "greenkeeper-lockfile": "1.15.1",
@@ -78,6 +80,7 @@
     "validate-commit-msg": "2.14.0"
   },
   "peerDependencies": {
+    "gatsby-link": "^1.6.45",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
