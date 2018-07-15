@@ -1,8 +1,8 @@
 import React from 'react';
 import {string} from 'prop-types';
 
-export default function PageHeading({text}) {
-  return <h2>{text}</h2>;
+export default function PageHeading({children}) {
+  return <h2>{children}</h2>;
 }
 
-PageHeading.propTypes = {text: string.isRequired};
+PageHeading.propTypes = {children: string.isRequired};
