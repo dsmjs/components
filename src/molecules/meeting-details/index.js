@@ -1,10 +1,11 @@
 import React from 'react';
 import {shape, string} from 'prop-types';
+import PageHeading from '../../atoms/headings/page';
 
 export default function MeetingDetails({meeting, host}) {
   return (
     <div>
-      <h2>{meeting.date}</h2>
+      <PageHeading>{meeting.date}</PageHeading>
       <p>{meeting.time.start} - {meeting.time.end} @ {host.location}</p>
     </div>
   );

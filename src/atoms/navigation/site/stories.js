@@ -8,5 +8,5 @@ import SiteNavigation from './index';
 storiesOf('Atoms/Navigation/Site Navigation', module)
   .addDecorator(storyRouter({
     '/': linkTo('Atoms/Logo', 'default'),
-    '/archive': linkTo('Atoms/Logo', 'default')
+    '/archive': linkTo('Organisms/Archive', 'default')
   })).add('default', () => <SiteNavigation />);

@@ -11,7 +11,7 @@ suite('meeting details', () => {
 
     const wrapper = shallow(<MeetingDetails meeting={meeting} host={host} />);
 
-    assert.equal(wrapper.find('h2').text(), meeting.date);
+    assert.equal(wrapper.find('PageHeading').childAt(0).text(), meeting.date);
     assert.equal(wrapper.find('p').text(), `${meeting.time.start} - ${meeting.time.end} @ ${host.location}`);
   });
 });
