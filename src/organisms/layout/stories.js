@@ -9,7 +9,7 @@ import Layout from './index';
 storiesOf('Organisms/Layout', module)
   .addDecorator(storyRouter({
     '/': linkTo('Organisms/Layout', 'default'),
-    '/archive': linkTo('Organisms/Layout', 'with children')
+    '/archive': linkTo('Organisms/Archive', 'with children')
   }))
   .add('default', () => <Layout sponsor={`${any.word()} ${any.word()}`} location={`${any.word()} ${any.word()}`} />)
   .add('with children', () => (

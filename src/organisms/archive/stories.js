@@ -4,16 +4,16 @@ import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
 import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links/src/index';
-import ArchiveList from './index';
+import Archive from './index';
 
 const meetings = [
   {node: {fields: {slug: '/meeting-1'}, frontmatter: {date: any.date(), talk: {title: any.sentence()}}}},
   {node: {fields: {slug: '/meeting-2'}, frontmatter: {date: any.date(), talk: {title: any.sentence()}}}}
 ];
 
-storiesOf('Molecules/Archive', module)
+storiesOf('Organisms/Archive', module)
   .addDecorator(storyRouter({
-    '/meeting-1': linkTo('Molecules/Meeting Details', 'default'),
-    '/meeting-2': linkTo('Molecules/Meeting Details', 'default')
+    '/meeting-1': linkTo('Organisms/Meeting', 'current'),
+    '/meeting-2': linkTo('Organisms/Meeting', 'default')
   }))
-  .add('default', () => <ArchiveList meetings={meetings} />);
+  .add('default', () => <Archive meetings={meetings} />);
