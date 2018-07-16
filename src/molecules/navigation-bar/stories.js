@@ -8,6 +8,6 @@ import NavigationBar from './index';
 storiesOf('Molecules/Navigation Bar', module)
   .addDecorator(storyRouter({
     '/': linkTo('Molecules/Header', 'default'),
-    '/archive': linkTo('Molecules/Meeting Details', 'default')
+    '/archive': linkTo('Organisms/Archive', 'default')
   }))
   .add('default', () => <NavigationBar />);
