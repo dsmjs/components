@@ -8,7 +8,7 @@ export default function ArchiveListItem({meeting}) {
   return (
     <Fragment>
       <h4><InternalLink to={meeting.node.fields.slug} text={meetingDetails.date} /></h4>
-      <p style={{marginLeft: '1em'}}>{meetingDetails.talk.title}</p>
+      <p style={{marginLeft: '1em'}}>{meetingDetails.talk.frontmatter.title}</p>
     </Fragment>
   );
 }
@@ -19,7 +19,9 @@ ArchiveListItem.propTypes = {
       frontmatter: shape({
         date: string.isRequired,
         talk: shape({
-          title: string.isRequired
+          frontmatter: shape({
+            title: string.isRequired
+          }).isRequired
         })
       }).isRequired,
       fields: shape({slug: string.isRequired}).isRequired
