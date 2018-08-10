@@ -26,6 +26,7 @@
     "build:js": "rollup -c",
     "build": "run-s clean build:*",
     "build-storybook": "build-storybook",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280",
     "deploy": "gh-pages -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/",
     "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
     "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload",
@@ -40,6 +41,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@percy-io/percy-storybook": "2.0.0",
     "@storybook/addon-actions": "3.4.8",
     "@storybook/addon-links": "3.4.8",
     "@storybook/react": "3.4.8",

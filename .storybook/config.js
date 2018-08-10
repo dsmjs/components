@@ -1,7 +1,11 @@
 import React from 'react';
-import {configure, addDecorator} from '@storybook/react';
+import {configure, addDecorator, getStorybook, setAddon} from '@storybook/react';
 import {Div} from 'glamorous';
+import createPercyAddon from '@percy-io/percy-storybook';
 import globalStyles from '../src/styles.json';
+
+const {percyAddon, serializeStories} = createPercyAddon();
+setAddon(percyAddon);
 
 addDecorator(story => (
   <Div css={globalStyles}>
@@ -15,3 +19,5 @@ function loadStories() {
 }
 
 configure(loadStories, module);
+
+serializeStories(getStorybook);
