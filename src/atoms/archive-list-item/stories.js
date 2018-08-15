@@ -6,7 +6,15 @@ import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links/src/index';
 import ArchiveListItem from './index';
 
-const meeting = {node: {fields: {slug: '/meeting-1'}, frontmatter: {date: any.date(), talk: {title: any.sentence()}}}};
+const meeting = {
+  node: {
+    fields: {slug: '/meeting-1'},
+    frontmatter: {
+      date: any.date(),
+      talk: {frontmatter: {title: any.sentence()}}
+    }
+  }
+};
 
 storiesOf('Atoms/Archive List-Item', module)
   .addDecorator(storyRouter({'/meeting-1': linkTo('Organisms/Meeting', 'current')}))
