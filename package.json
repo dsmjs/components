@@ -50,7 +50,7 @@
     "babel-core": "6.26.3",
     "babel-plugin-inline-react-svg": "^0.5.4",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-plugin-transform-react-remove-prop-types": "0.4.14",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.15",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "babel-register": "6.26.0",
