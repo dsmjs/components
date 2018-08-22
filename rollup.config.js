@@ -18,7 +18,8 @@ export default {
       presets: [['env', {targets: {node: 'current', browsers: ['last 2 versions']}, modules: false}], 'react'],
       plugins: [
         ['transform-object-rest-spread', {useBuiltIns: true}],
-        ['transform-react-remove-prop-types', {mode: 'wrap'}]
+        ['transform-react-remove-prop-types', {mode: 'wrap'}],
+        'babel-plugin-inline-react-svg'
       ]
     })
   ],

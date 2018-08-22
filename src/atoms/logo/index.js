@@ -1,9 +1,9 @@
 import React from 'react';
 import {shape} from 'prop-types';
-import {Img} from 'glamorous';
+import LogoSvg from './dsmJS.svg';
 
 export default function Logo({styleOverrides}) {
-  return <Img src="https://dsmjs.com/img/dsmjs-logo.png" css={styleOverrides} />;
+  return <LogoSvg style={styleOverrides} />;
 }
 
 Logo.propTypes = {styleOverrides: shape()};

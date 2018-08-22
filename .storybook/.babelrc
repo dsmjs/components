@@ -1,24 +1,7 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": [
-            "last 2 versions",
-            "safari >= 7"
-          ]
-        }
-      }
-    ],
-    "react"
-  ],
+  "presets": [["env", {"targets": {"browsers": ["last 2 versions", "safari >= 7"]}}], "react"],
   "plugins": [
-    [
-      "transform-object-rest-spread",
-      {
-        "useBuiltIns": true
-      }
-    ]
+    ["transform-object-rest-spread", {"useBuiltIns": true}],
+    "babel-plugin-inline-react-svg"
   ]
 }
