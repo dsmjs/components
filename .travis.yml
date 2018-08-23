@@ -5,6 +5,7 @@ notifications:
 branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
+install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
 after_install: npm ls >/dev/null
 before_script: npm run greenkeeper:update-lockfile
 before_deploy:
