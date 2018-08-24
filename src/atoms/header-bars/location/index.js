@@ -1,7 +1,7 @@
 import React from 'react';
 import {string} from 'prop-types';
 import glamorous from 'glamorous';
-import styles from '../styles.json';
+import styles from '../styles';
 
 const LocationBarDiv = glamorous.div({
   ...styles,

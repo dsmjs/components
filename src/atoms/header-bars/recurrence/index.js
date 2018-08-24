@@ -1,6 +1,6 @@
 import React from 'react';
 import glamorous from 'glamorous';
-import styles from '../styles.json';
+import styles from '../styles';
 
 const RecurrenceBarDiv = glamorous.div({
   ...styles,
