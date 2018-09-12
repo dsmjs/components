@@ -45,7 +45,7 @@
     "@storybook/addon-actions": "3.4.10",
     "@storybook/addon-links": "3.4.10",
     "@storybook/react": "3.4.10",
-    "@travi/any": "1.8.0",
+    "@travi/any": "1.8.1",
     "@travi/eslint-config-travi": "^1.6.15",
     "babel-core": "6.26.3",
     "babel-plugin-inline-react-svg": "^0.5.4",
