@@ -61,7 +61,7 @@
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
     "gatsby": "1.9.277",
-    "gatsby-link": "1.6.46",
+    "gatsby-link": "2.0.1",
     "gh-pages": "2.0.0",
     "globstar": "1.0.0",
     "greenkeeper-lockfile": "2.4.0",
