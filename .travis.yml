@@ -5,6 +5,7 @@ notifications:
 branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
+before_install: curl ifconfig.co
 after_install: npm ls >/dev/null
 before_deploy:
 - npm run build-storybook
