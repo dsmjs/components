@@ -28,8 +28,6 @@
     "build-storybook": "build-storybook",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280",
     "deploy": "gh-pages -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/",
-    "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
-    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload",
     "prepublishOnly": "run-s build"
   },
   "config": {
@@ -64,7 +62,6 @@
     "gatsby-link": "1.6.46",
     "gh-pages": "2.0.0",
     "globstar": "1.0.0",
-    "greenkeeper-lockfile": "2.4.0",
     "husky": "1.1.0",
     "markdownlint-cli": "0.13.0",
     "mocha": "5.2.0",
