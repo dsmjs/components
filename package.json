@@ -27,6 +27,7 @@
     "build": "run-s clean build:*",
     "build-storybook": "build-storybook",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280",
+    "predeploy": "run-s build-storybook",
     "deploy": "gh-pages -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/",
     "prepack": "run-s build"
   },

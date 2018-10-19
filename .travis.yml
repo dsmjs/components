@@ -8,7 +8,6 @@ branches:
 before_install: curl ifconfig.co
 after_install: npm ls >/dev/null
 before_deploy:
-- npm run build-storybook
 - git config --global user.email "$GIT_EMAIL"
 - git config --global user.name "dsmJS Bot"
 deploy:
