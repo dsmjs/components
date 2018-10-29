@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@percy-io/percy-storybook": "2.1.0",
-    "@storybook/addon-actions": "3.4.11",
+    "@storybook/addon-actions": "4.0.0",
     "@storybook/addon-links": "3.4.11",
     "@storybook/react": "3.4.11",
     "@travi/any": "1.8.2",
