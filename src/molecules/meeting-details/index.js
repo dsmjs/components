@@ -6,7 +6,7 @@ export default function MeetingDetails({meeting, host}) {
   return (
     <div>
       <PageHeading>{meeting.date}</PageHeading>
-      <p>{meeting.time.start} - {meeting.time.end} @ {host.location}</p>
+      <p>{`${meeting.time.start} - ${meeting.time.end} @ ${host.location}`}</p>
     </div>
   );
 }

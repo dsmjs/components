@@ -26,4 +26,3 @@ export default function SiteNavigation({linkStyles}) {
 
 SiteNavigation.propTypes = {linkStyles: shape()};
 SiteNavigation.defaultProps = {linkStyles: {}};
-
