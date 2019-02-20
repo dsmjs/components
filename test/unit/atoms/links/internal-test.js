@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
@@ -10,7 +11,7 @@ suite('internal link', () => {
     const text = any.sentence();
 
     const wrapper = shallow(<InternalLink text={text} to={url} />);
-    const link = wrapper.find('GatsbyLink');
+    const link = wrapper.find(Link);
 
     assert.equal(link.prop('to'), url);
     assert.equal(link.childAt(0).text(), text);

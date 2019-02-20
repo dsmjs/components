@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
@@ -10,7 +11,7 @@ suite('header', () => {
     const location = any.string();
 
     const wrapper = shallow(<Header sponsor={sponsor} location={location} />);
-    const link = wrapper.find('GatsbyLink');
+    const link = wrapper.find(Link);
 
     assert.equal(link.prop('to'), '/');
     assert.isTrue(link.find('Logo').exists());
