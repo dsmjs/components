@@ -1,7 +1,7 @@
 {
-  "presets": [["env", {"targets": {"node": "current"}}], "react"],
+  "presets": [["@babel/env", {"targets": {"node": "current"}}], "@babel/react"],
   "plugins": [
-    ["transform-object-rest-spread", {"useBuiltIns": true}],
+    ["@babel/proposal-object-rest-spread", {"useBuiltIns": true}],
     "babel-plugin-inline-react-svg"
   ]
 }
