@@ -46,7 +46,7 @@
     "@babel/register": "^7.0.0",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.0.8",
-    "@storybook/addon-links": "5.0.7",
+    "@storybook/addon-links": "5.0.8",
     "@storybook/react": "^5.0.7",
     "@travi/any": "1.8.5",
     "@travi/eslint-config-travi": "^1.8.0",
