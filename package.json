@@ -48,7 +48,7 @@
     "@storybook/addon-actions": "5.0.9",
     "@storybook/addon-links": "5.0.9",
     "@storybook/react": "^5.0.9",
-    "@travi/any": "1.8.6",
+    "@travi/any": "1.9.0",
     "@travi/eslint-config-travi": "^1.8.0",
     "babel-plugin-inline-react-svg": "^1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
