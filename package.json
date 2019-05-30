@@ -40,16 +40,19 @@
     "access": "public"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "@dsmjs/eslint-config": "1.0.1",
+    "@dsmjs/eslint-config-mocha": "1.0.0",
+    "@dsmjs/eslint-config-react": "1.0.0-alpha.2",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.0.9",
     "@storybook/addon-links": "5.0.9",
     "@storybook/react": "^5.0.9",
     "@travi/any": "2.0.0",
-    "@travi/eslint-config-travi": "^1.8.0",
     "babel-plugin-inline-react-svg": "^1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "chai": "^4.2.0",
@@ -58,7 +61,6 @@
     "cz-conventional-changelog": "2.1.0",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.10.0",
-    "gatsby": "^2.1.9",
     "gh-pages": "2.0.1",
     "globstar": "1.0.0",
     "husky": "2.3.0",
@@ -75,10 +77,10 @@
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "4.2.4",
     "storybook-router": "0.3.4",
-    "validate-commit-msg": "2.14.0"
+    "validate-commit-msg": "2.14.0",
+    "webpack": "^4.32.2"
   },
   "peerDependencies": {
-    "gatsby-link": "^2.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
