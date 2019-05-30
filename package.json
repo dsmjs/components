@@ -47,7 +47,7 @@
     "@babel/register": "^7.4.4",
     "@dsmjs/eslint-config": "1.0.1",
     "@dsmjs/eslint-config-mocha": "1.0.0",
-    "@dsmjs/eslint-config-react": "1.0.0-alpha.2",
+    "@dsmjs/eslint-config-react": "1.0.0",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.0.9",
     "@storybook/addon-links": "5.0.9",
