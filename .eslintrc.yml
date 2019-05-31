@@ -5,8 +5,3 @@ extends:
 overrides:
   - files: '**/*-test.js'
     extends: '@dsmjs/mocha'
-  - files: '.storybook/*.js'
-    rules:
-      import/no-extraneous-dependencies:
-        - error
-        - devDependencies: true
