@@ -1,7 +1,1 @@
-{
-  "presets": [["@babel/env", {"targets": {"node": "current"}}], "@babel/react"],
-  "plugins": [
-    ["@babel/proposal-object-rest-spread", {"useBuiltIns": true}],
-    "babel-plugin-inline-react-svg"
-  ]
-}
+{"presets": [["@dsmjs", {"react":  true}]]}

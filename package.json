@@ -41,10 +41,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "@dsmjs/babel-preset": "^1.0.4",
     "@dsmjs/eslint-config": "1.0.2",
     "@dsmjs/eslint-config-mocha": "1.0.1",
     "@dsmjs/eslint-config-react": "1.1.2",
