@@ -12,15 +12,8 @@ export default {
     babel({
       babelrc: false,
       exclude: ['./node_modules/**'],
-      presets: [
-        ['@babel/env', {targets: {node: 'current', browsers: ['last 2 versions']}, modules: false}],
-        '@babel/react'
-      ],
-      plugins: [
-        ['@babel/proposal-object-rest-spread', {useBuiltIns: true}],
-        ['transform-react-remove-prop-types', {mode: 'wrap'}],
-        'babel-plugin-inline-react-svg'
-      ]
+      presets: [['@dsmjs', {targets: {browser: true}, react: true, modules: false}]],
+      plugins: [['transform-react-remove-prop-types', {mode: 'wrap'}]]
     })
   ],
   output: [
