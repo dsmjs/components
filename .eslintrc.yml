@@ -1,7 +1,4 @@
 extends:
   - '@dsmjs'
+  - '@dsmjs/mocha'
   - '@dsmjs/react'
-
-overrides:
-  - files: '**/*-test.js'
-    extends: '@dsmjs/mocha'
