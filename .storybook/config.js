@@ -4,6 +4,8 @@ import {Div} from 'glamorous';
 import createPercyAddon from '@percy-io/percy-storybook';
 import globalStyles from '../src/styles.json';
 
+global.__PATH_PREFIX__ = '';                                            // eslint-disable-line no-underscore-dangle
+
 const {percyAddon, serializeStories} = createPercyAddon();
 setAddon(percyAddon);
 
