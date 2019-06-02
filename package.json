@@ -42,7 +42,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "@dsmjs/babel-preset": "^1.0.4",
+    "@dsmjs/babel-preset": "^1.0.5",
     "@dsmjs/eslint-config": "1.0.2",
     "@dsmjs/eslint-config-mocha": "1.0.1",
     "@dsmjs/eslint-config-react": "1.1.2",
@@ -52,7 +52,6 @@
     "@storybook/react": "^5.0.11",
     "@travi/any": "2.0.0",
     "babel-loader": "^8.0.6",
-    "babel-plugin-inline-react-svg": "^1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "chai": "^4.2.0",
     "codecov": "3.5.0",
