@@ -3,7 +3,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
 import storyRouter from 'storybook-router';
-import {linkTo} from '@storybook/addon-links/src/index';
+import {linkTo} from '@storybook/addon-links';
 import Header from './index';
 
 storiesOf('Molecules/Header', module)

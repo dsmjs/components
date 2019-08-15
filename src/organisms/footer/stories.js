@@ -2,7 +2,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import storyRouter from 'storybook-router';
-import {linkTo} from '@storybook/addon-links/src/index';
+import {linkTo} from '@storybook/addon-links';
 import Footer from './index';
 
 storiesOf('Organisms/Footer', module)
