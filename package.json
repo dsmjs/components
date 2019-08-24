@@ -45,7 +45,7 @@
     "@dsmjs/babel-preset": "^1.0.11",
     "@dsmjs/eslint-config": "1.0.18",
     "@dsmjs/eslint-config-mocha": "1.0.4",
-    "@dsmjs/eslint-config-react": "1.1.7",
+    "@dsmjs/eslint-config-react": "1.1.8",
     "@dsmjs/remark-preset-lint": "1.0.1",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "^5.1.11",
