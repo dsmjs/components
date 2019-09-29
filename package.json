@@ -25,7 +25,7 @@
     "start": "start-storybook --port 6006 --ci",
     "build:js": "rollup --config",
     "build": "run-s clean build:*",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook --quiet",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280",
     "predeploy": "run-s build-storybook",
     "deploy": "gh-pages -r \"https://$GH_TOKEN@github.com/dsmjs/components.git\" -d storybook-static/",
