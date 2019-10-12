@@ -47,6 +47,7 @@
     "@dsmjs/eslint-config-mocha": "1.0.5",
     "@dsmjs/eslint-config-react": "1.1.19",
     "@dsmjs/remark-preset-lint": "1.0.1",
+    "@emotion/babel-preset-css-prop": "^10.0.17",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "^5.2.3",
     "@storybook/addon-links": "^5.2.3",
@@ -84,6 +85,7 @@
     "react-dom": "^16.0.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.21",
     "gatsby-link": "^2.2.20",
     "glamor": "2.20.40",
     "glamorous": "5.0.0",
