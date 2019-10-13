@@ -4,7 +4,7 @@ notifications:
   email: false
 branches:
   except:
-  - "/^v\\d+\\.\\d+\\.\\d+$/"
+  - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
 before_install: curl ifconfig.co
 after_install: npm ls >/dev/null
 before_deploy:
