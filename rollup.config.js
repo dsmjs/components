@@ -12,7 +12,7 @@ export default {
     babel({
       babelrc: false,
       exclude: ['./node_modules/**'],
-      presets: [['@dsmjs', {targets: {browser: true}, react: true, modules: false}]],
+      presets: [['@dsmjs', {targets: {browser: true}, react: true, modules: false}], '@emotion/babel-preset-css-prop'],
       plugins: [['transform-react-remove-prop-types', {mode: 'wrap'}]]
     })
   ],

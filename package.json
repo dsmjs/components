@@ -47,6 +47,7 @@
     "@dsmjs/eslint-config-mocha": "1.0.5",
     "@dsmjs/eslint-config-react": "1.1.19",
     "@dsmjs/remark-preset-lint": "1.0.1",
+    "@emotion/babel-preset-css-prop": "^10.0.17",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "^5.2.3",
     "@storybook/addon-links": "^5.2.3",
@@ -59,7 +60,7 @@
     "commitlint-config-dsmjs": "1.0.14",
     "cz-conventional-changelog": "3.0.2",
     "enzyme": "3.10.0",
-    "enzyme-adapter-react-16": "1.15.0",
+    "enzyme-adapter-react-16": "1.15.1",
     "gh-pages": "2.1.1",
     "husky": "3.0.8",
     "mocha": "6.2.1",
@@ -77,13 +78,14 @@
     "rollup-plugin-node-resolve": "5.2.0",
     "storybook-router": "0.3.4",
     "validate-commit-msg": "2.14.0",
-    "webpack": "^4.41.0"
+    "webpack": "^4.41.1"
   },
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.21",
     "gatsby-link": "^2.2.20",
     "glamor": "2.20.40",
     "glamorous": "5.0.0",
