@@ -50,7 +50,7 @@
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "^5.2.4",
     "@storybook/addon-links": "^5.2.4",
-    "@storybook/react": "^5.2.3",
+    "@storybook/react": "^5.2.4",
     "@travi/any": "2.0.6",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
