@@ -21,6 +21,7 @@ $ npm install @dsmjs/components --save-prod
 
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
+[![semantic-release][semantic-release-badge]][semantic-release-link]
 [![Greenkeeper badge](https://badges.greenkeeper.io/dsmjs/components.svg)](https://greenkeeper.io/)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/dsmjs/components)
 [![PRs Welcome][PRs-badge]][PRs-link]
@@ -72,6 +73,8 @@ which makes adding and managing the benefits of Percy incredibly easy.
 
 [commit-convention-link]: https://conventionalcommits.org
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
+[semantic-release-link]: https://github.com/semantic-release/semantic-release
+[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [commitizen-link]: http://commitizen.github.io/cz-cli/
 [commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [PRs-link]: http://makeapullrequest.com
