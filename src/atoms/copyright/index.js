@@ -4,7 +4,7 @@ const styles = {backgroundColor: '#333', color: '#f0da4f', padding: '1em', textA
 
 export default function CopyrightBar() {
   return (
-    <div style={styles}>
+    <div css={styles}>
       {`Copyright © dsmJS 2013 - ${new Date().getFullYear()}`}
     </div>
   );
