@@ -15,7 +15,7 @@ export default function SiteNavigation({linkStyles}) {
   };
 
   return (
-    <ol style={{listStyle: 'none', display: 'flex', margin: 0, paddingLeft: layoutStyles.innerGutterWidth}}>
+    <ol css={{listStyle: 'none', display: 'flex', margin: 0, paddingLeft: layoutStyles.innerGutterWidth}}>
       <li className={css(listItemStyles)}><Link className={css(enhancedLinkStyles)} to="/">Home</Link></li>
       <li className={css(listItemStyles)}>
         <Link className={css(enhancedLinkStyles)} to="/archive">Past Meetings</Link>
