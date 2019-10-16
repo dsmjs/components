@@ -1,6 +1,6 @@
 {
   "presets": [
-    ["@dsmjs", {"targets": {"browser": true}, "browser": true, "react": true}],
+    ["@dsmjs", {"targets": {"browser": true}, "react": true}],
     "@emotion/babel-preset-css-prop"
   ]
 }
