@@ -4,7 +4,7 @@ notifications:
   email: false
 branches:
   except:
-  - "/^v\\d+\\.\\d+\\.\\d+$/"
+  - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
 before_install: curl ifconfig.co
 after_install: npm ls >/dev/null
 before_deploy:
@@ -13,7 +13,9 @@ before_deploy:
 deploy:
 - provider: script
   skip_cleanup: true
-  script: npx semantic-release
+  script: npx semantic-release@beta
+  on:
+    all_branches: true
 - provider: script
   skip_cleanup: true
   script: npm run deploy
