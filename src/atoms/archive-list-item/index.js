@@ -8,7 +8,7 @@ export default function ArchiveListItem({meeting}) {
   return (
     <>
       <h4><InternalLink to={meeting.node.fields.slug} text={meetingDetails.date} /></h4>
-      <p style={{marginLeft: '1em'}}>{meetingDetails.talk.frontmatter.title}</p>
+      <p css={{marginLeft: '1em'}}>{meetingDetails.talk.frontmatter.title}</p>
     </>
   );
 }

@@ -4,7 +4,7 @@ import {string, shape} from 'prop-types';
 export default function Talk({talk, content}) {
   return (
     <>
-      <h1 style={{color: '#AD5472'}}>{talk.title}</h1>
+      <h1 css={{color: '#AD5472'}}>{talk.title}</h1>
       <h3>{talk.speaker.frontmatter.name}</h3>
       <div dangerouslySetInnerHTML={{__html: content}} />
     </>
