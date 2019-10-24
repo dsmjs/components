@@ -1,6 +1,7 @@
 import React from 'react';
 import {string} from 'prop-types';
 import Icon from 'react-simple-icons';
+import {useHover} from 'react-use';
 import layoutStyles from '../../layoutStyles.json';
 
 const listStyles = {
@@ -12,21 +13,26 @@ const listStyles = {
 };
 const listItemStyles = {padding: '0 0 0 0.5em', height: 32};
 const labelStyles = {display: 'none'};
+const iconSize = 32;
 
 export default function SocialIcons({color}) {
   const iconColor = color || '#000';
+  const TwitterIcon = hovered => <Icon fill={hovered ? '#ccc' : iconColor} size={iconSize} name="twitter" />;
+  const GithubIcon = hovered => <Icon fill={hovered ? '#ccc' : iconColor} size={iconSize} name="github" />;
+  const [hoverableTwitterIcon] = useHover(TwitterIcon);
+  const [hoverableGithubIcon] = useHover(GithubIcon);
 
   return (
     <ul style={listStyles}>
       <li style={listItemStyles}>
         <a href="https://twitter.com/dsmjs">
-          <Icon fill={iconColor} size={32} name="twitter" />
+          {hoverableTwitterIcon}
           <span style={labelStyles}>Twitter</span>
         </a>
       </li>
       <li style={listItemStyles}>
         <a href="https://github.com/dsmjs">
-          <Icon fill={iconColor} size={32} name="github" />
+          {hoverableGithubIcon}
           <span style={labelStyles}>GitHub</span>
         </a>
       </li>
