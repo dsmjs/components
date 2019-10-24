@@ -1,6 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import SiteNavigation from '.';
+import FooterSocialIcons from '.';
 
-storiesOf('Atoms/Social Icons', module)
-  .add('default', () => <SiteNavigation />);
+storiesOf('Atoms/Social Icons/Footer', module)
+  .add('default', () => <FooterSocialIcons />);
