@@ -8,14 +8,23 @@ const listStyles = {
   listStyle: 'none',
   display: 'flex',
   alignItems: 'center',
-  margin: 0
+  margin: 0,
+  fontSize: 20
 };
-const listItemStyles = {padding: '0 0 0 0.5em', height: iconSize};
+const listItemStyles = {
+  padding: '0 0 0 .5em',
+  height: iconSize,
+  span: {
+    paddingLeft: '.25em'
+  }
+};
 
 export default function SpeakerSocialIcons({twitter, github}) {
-  const iconColor = '#000';
-  const TwitterIcon = hovered => <Icon fill={hovered ? '#ccc' : iconColor} size={iconSize} name="twitter" />;
-  const GithubIcon = hovered => <Icon fill={hovered ? '#ccc' : iconColor} size={iconSize} name="github" />;
+  const nonHoveredIconColor = '#888';
+  const TwitterIcon = hovered => (
+    <Icon fill={hovered ? '#1DA1F2' : nonHoveredIconColor} size={iconSize} name="twitter" />
+  );
+  const GithubIcon = hovered => <Icon fill={hovered ? '#000' : nonHoveredIconColor} size={iconSize} name="github" />;
   const [hoverableTwitterIcon] = useHover(TwitterIcon);
   const [hoverableGithubIcon] = useHover(GithubIcon);
 
