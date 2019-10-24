@@ -16,7 +16,7 @@
     "clean": "rimraf lib/",
     "lint:md": "remark --frail .",
     "lint:js": "eslint . .storybook --cache",
-    "tests:unit": "mocha --recursive src/**/*-test.js",
+    "tests:unit": "mocha 'src/**/*-test.js'",
     "test": "npm-run-all --print-label --parallel lint:* --sequential coverage --parallel build build-storybook",
     "coverage": "nyc run-s tests:unit",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
