@@ -8,6 +8,6 @@ suite('navigation bar', () => {
     const wrapper = shallow(<NavigationBar />);
 
     assert.isTrue(wrapper.find('SiteNavigation').exists());
-    assert.isTrue(wrapper.find('SocialIcons').exists());
+    assert.isTrue(wrapper.find('FooterSocialIcons').exists());
   });
 });
