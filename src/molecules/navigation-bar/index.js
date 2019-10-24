@@ -1,6 +1,6 @@
 import React from 'react';
 import SiteNavigation from '../../atoms/navigation/site';
-import SocialIcons from '../../atoms/social';
+import SocialIcons from '../../atoms/social/footer';
 
 const navigationTextColor = '#fff';
 

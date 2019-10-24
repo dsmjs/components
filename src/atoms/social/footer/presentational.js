@@ -2,7 +2,7 @@ import React from 'react';
 import {string} from 'prop-types';
 import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
-import layoutStyles from '../../layoutStyles.json';
+import layoutStyles from '../../../layoutStyles.json';
 
 const listStyles = {
   listStyle: 'none',
@@ -23,17 +23,17 @@ export default function SocialIcons({color}) {
   const [hoverableGithubIcon] = useHover(GithubIcon);
 
   return (
-    <ul style={listStyles}>
-      <li style={listItemStyles}>
+    <ul css={listStyles}>
+      <li css={listItemStyles}>
         <a href="https://twitter.com/dsmjs">
           {hoverableTwitterIcon}
-          <span style={labelStyles}>Twitter</span>
+          <span css={labelStyles}>Twitter</span>
         </a>
       </li>
-      <li style={listItemStyles}>
+      <li css={listItemStyles}>
         <a href="https://github.com/dsmjs">
           {hoverableGithubIcon}
-          <span style={labelStyles}>GitHub</span>
+          <span css={labelStyles}>GitHub</span>
         </a>
       </li>
     </ul>
