@@ -3,7 +3,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
 import {talkContent} from '../../../.storybook/data/html-content';
-import Talk from './index';
+import Talk from '.';
 
 const talk = {
   title: any.sentence(),
