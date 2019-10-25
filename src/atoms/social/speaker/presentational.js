@@ -2,6 +2,7 @@ import React from 'react';
 import {string} from 'prop-types';
 import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
+import ExternalLink from '../../links/external';
 
 const iconSize = 16;
 const listStyles = {
@@ -9,6 +10,7 @@ const listStyles = {
   display: 'flex',
   alignItems: 'center',
   margin: 0,
+  padding: 0,
   fontSize: 20
 };
 const listItemStyles = {
@@ -32,18 +34,18 @@ export default function SpeakerSocialIcons({twitter, github}) {
     <ul css={listStyles}>
       {twitter && (
         <li css={listItemStyles}>
-          <a href={`https://twitter.com/${twitter}`}>
+          <ExternalLink to={`https://twitter.com/${twitter}`}>
             {hoverableTwitterIcon}
             <span>{twitter}</span>
-          </a>
+          </ExternalLink>
         </li>
       )}
       {github && (
         <li css={listItemStyles}>
-          <a href={`https://github.com/${github}`}>
+          <ExternalLink to={`https://github.com/${github}`}>
             {hoverableGithubIcon}
             <span>{github}</span>
-          </a>
+          </ExternalLink>
         </li>
       )}
     </ul>

@@ -12,10 +12,10 @@ suite('speaker social icons', () => {
     const items = wrapper.find('li');
     const twitter = items.at(0);
 
-    const twitterLink = twitter.find('a');
+    const twitterLink = twitter.find('ExternalLink');
     const twitterIcon = twitterLink.find('Icon');
     assert.equal(twitterLink.find('span').text(), twitterHandle);
-    assert.equal(twitterLink.prop('href'), `https://twitter.com/${twitterHandle}`);
+    assert.equal(twitterLink.prop('to'), `https://twitter.com/${twitterHandle}`);
     assert.equal(twitterIcon.prop('name'), 'twitter');
   });
 
@@ -26,10 +26,10 @@ suite('speaker social icons', () => {
     const items = wrapper.find('li');
     const github = items.at(0);
 
-    const githubLink = github.find('a');
+    const githubLink = github.find('ExternalLink');
     const githubIcon = githubLink.find('Icon');
     assert.equal(githubLink.find('span').text(), githubAccount);
-    assert.equal(githubLink.prop('href'), `https://github.com/${githubAccount}`);
+    assert.equal(githubLink.prop('to'), `https://github.com/${githubAccount}`);
     assert.equal(githubIcon.prop('name'), 'github');
   });
 });

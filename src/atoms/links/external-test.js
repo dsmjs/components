@@ -9,7 +9,7 @@ suite('external link', () => {
     const url = any.url();
     const text = any.sentence();
 
-    const wrapper = shallow(<ExternalLink text={text} to={url} />);
+    const wrapper = shallow(<ExternalLink to={url}>{text}</ExternalLink>);
     const link = wrapper.find('a');
 
     assert.equal(link.prop('href'), url);
