@@ -24,30 +24,28 @@ const listItemStyles = {
 export default function SpeakerSocialIcons({twitter, github}) {
   const nonHoveredIconColor = '#888';
   const TwitterIcon = hovered => (
-    <Icon fill={hovered ? '#1DA1F2' : nonHoveredIconColor} size={iconSize} name="twitter" />
+    <li css={listItemStyles}>
+      <ExternalLink to={`https://twitter.com/${twitter}`}>
+        <Icon fill={hovered ? '#1DA1F2' : nonHoveredIconColor} size={iconSize} name="twitter" />
+        <span>{twitter}</span>
+      </ExternalLink>
+    </li>
   );
-  const GithubIcon = hovered => <Icon fill={hovered ? '#000' : nonHoveredIconColor} size={iconSize} name="github" />;
+  const GithubIcon = hovered => (
+    <li css={listItemStyles}>
+      <ExternalLink to={`https://github.com/${github}`}>
+        <Icon fill={hovered ? '#000' : nonHoveredIconColor} size={iconSize} name="github" />
+        <span>{github}</span>
+      </ExternalLink>
+    </li>
+  );
   const [hoverableTwitterIcon] = useHover(TwitterIcon);
   const [hoverableGithubIcon] = useHover(GithubIcon);
 
   return (
     <ul css={listStyles}>
-      {twitter && (
-        <li css={listItemStyles}>
-          <ExternalLink to={`https://twitter.com/${twitter}`}>
-            {hoverableTwitterIcon}
-            <span>{twitter}</span>
-          </ExternalLink>
-        </li>
-      )}
-      {github && (
-        <li css={listItemStyles}>
-          <ExternalLink to={`https://github.com/${github}`}>
-            {hoverableGithubIcon}
-            <span>{github}</span>
-          </ExternalLink>
-        </li>
-      )}
+      {twitter && hoverableTwitterIcon}
+      {github && hoverableGithubIcon}
     </ul>
   );
 }
