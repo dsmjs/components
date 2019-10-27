@@ -10,7 +10,8 @@ suite('sponsor details', () => {
 
     const wrapper = shallow(<SponsorDetails sponsor={sponsor} />);
 
-    assert.equal(wrapper.find('p').text(), `Pizza and drinks proudly sponsored by ${sponsor.name}`);
-    assert.equal(wrapper.find('a').prop('href'), sponsor.site);
+    assert.equal(wrapper.find('p span').text(), 'Pizza and drinks proudly sponsored by ');
+    assert.equal(wrapper.find('p ExternalLink').prop('to'), sponsor.site);
+    assert.equal(wrapper.find('p ExternalLink').children().text(), sponsor.name);
   });
 });
