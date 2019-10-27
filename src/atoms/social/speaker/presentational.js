@@ -1,10 +1,8 @@
 import React from 'react';
 import {string} from 'prop-types';
-import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
-import ExternalLink from '../../links/external';
+import SocialLink from './social-link';
 
-const iconSize = 16;
 const listStyles = {
   listStyle: 'none',
   display: 'flex',
@@ -13,34 +11,26 @@ const listStyles = {
   padding: 0,
   fontSize: 20
 };
-const listItemStyles = {
-  padding: '0 0 0 .5em',
-  height: iconSize,
-  span: {
-    paddingLeft: '.25em'
-  }
-};
+
+function useTwitterIcon(twitter) {
+  const [hoverableTwitterIcon] = useHover(hovered => (
+    <SocialLink hovered={hovered} service="twitter" account={twitter} brandColor="#1DA1F2" />
+  ));
+
+  return hoverableTwitterIcon;
+}
+
+function useGithubIcon(github) {
+  const [hoverableGithubIcon] = useHover(hovered => (
+    <SocialLink hovered={hovered} service="github" account={github} brandColor="#000" />
+  ));
+
+  return hoverableGithubIcon;
+}
 
 export default function SpeakerSocialIcons({twitter, github}) {
-  const nonHoveredIconColor = '#888';
-  const TwitterIcon = hovered => (
-    <li css={listItemStyles}>
-      <ExternalLink to={`https://twitter.com/${twitter}`}>
-        <Icon fill={hovered ? '#1DA1F2' : nonHoveredIconColor} size={iconSize} name="twitter" />
-        <span>{twitter}</span>
-      </ExternalLink>
-    </li>
-  );
-  const GithubIcon = hovered => (
-    <li css={listItemStyles}>
-      <ExternalLink to={`https://github.com/${github}`}>
-        <Icon fill={hovered ? '#000' : nonHoveredIconColor} size={iconSize} name="github" />
-        <span>{github}</span>
-      </ExternalLink>
-    </li>
-  );
-  const [hoverableTwitterIcon] = useHover(TwitterIcon);
-  const [hoverableGithubIcon] = useHover(GithubIcon);
+  const hoverableTwitterIcon = useTwitterIcon(twitter);
+  const hoverableGithubIcon = useGithubIcon(github);
 
   return (
     <ul css={listStyles}>

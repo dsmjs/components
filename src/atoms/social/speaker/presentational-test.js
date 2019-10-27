@@ -9,27 +9,22 @@ suite('speaker social icons', () => {
     const twitterHandle = any.word();
 
     const wrapper = shallow(<SpeakerSocialIcons twitter={twitterHandle} />);
-    const items = wrapper.find('li');
-    const twitter = items.at(0);
+    const link = wrapper.find('SocialLink');
 
-    const twitterLink = twitter.find('ExternalLink');
-    const twitterIcon = twitterLink.find('Icon');
-    assert.equal(twitterLink.find('span').text(), twitterHandle);
-    assert.equal(twitterLink.prop('to'), `https://twitter.com/${twitterHandle}`);
-    assert.equal(twitterIcon.prop('name'), 'twitter');
+    assert.equal(link.prop('service'), 'twitter');
+    assert.equal(link.prop('account'), twitterHandle);
+    // from the twitter brand guidelines: https://about.twitter.com/en_us/company/brand-resources.html
+    assert.equal(link.prop('brandColor'), '#1DA1F2');
   });
 
   test('that the github icon links to the speakers\'s github profile', () => {
     const githubAccount = any.word();
 
     const wrapper = shallow(<SpeakerSocialIcons github={githubAccount} />);
-    const items = wrapper.find('li');
-    const github = items.at(0);
+    const link = wrapper.find('SocialLink');
 
-    const githubLink = github.find('ExternalLink');
-    const githubIcon = githubLink.find('Icon');
-    assert.equal(githubLink.find('span').text(), githubAccount);
-    assert.equal(githubLink.prop('to'), `https://github.com/${githubAccount}`);
-    assert.equal(githubIcon.prop('name'), 'github');
+    assert.equal(link.prop('service'), 'github');
+    assert.equal(link.prop('account'), githubAccount);
+    assert.equal(link.prop('brandColor'), '#000');
   });
 });
