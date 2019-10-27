@@ -1,6 +1,5 @@
 import React from 'react';
 import {shape} from 'prop-types';
-import {css} from 'glamor';
 import Link from 'gatsby-link';
 import layoutStyles from '../../../layoutStyles.json';
 
@@ -16,9 +15,9 @@ export default function SiteNavigation({linkStyles}) {
 
   return (
     <ol css={{listStyle: 'none', display: 'flex', margin: 0, paddingLeft: layoutStyles.innerGutterWidth}}>
-      <li className={css(listItemStyles)}><Link className={css(enhancedLinkStyles)} to="/">Home</Link></li>
-      <li className={css(listItemStyles)}>
-        <Link className={css(enhancedLinkStyles)} to="/archive">Past Meetings</Link>
+      <li css={listItemStyles}><Link css={enhancedLinkStyles} to="/">Home</Link></li>
+      <li css={listItemStyles}>
+        <Link css={enhancedLinkStyles} to="/archive">Past Meetings</Link>
       </li>
     </ol>
   );
