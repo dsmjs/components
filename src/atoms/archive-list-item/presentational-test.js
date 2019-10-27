@@ -14,7 +14,7 @@ suite('archive list-item', () => {
     const heading = wrapper.find('h4');
     const description = wrapper.find('p');
 
-    assert.equal(heading.find('InternalLink').prop('text'), meetingDetails.date);
+    assert.equal(heading.find('InternalLink').children().text(), meetingDetails.date);
     assert.equal(heading.find('InternalLink').prop('to'), slug);
     assert.equal(description.text(), meetingDetails.talk.frontmatter.title);
   });

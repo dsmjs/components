@@ -10,7 +10,7 @@ suite('internal link', () => {
     const url = any.url();
     const text = any.sentence();
 
-    const wrapper = shallow(<InternalLink text={text} to={url} />);
+    const wrapper = shallow(<InternalLink to={url}>{text}</InternalLink>);
     const link = wrapper.find(Link);
 
     assert.equal(link.prop('to'), url);

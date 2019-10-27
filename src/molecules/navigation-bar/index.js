@@ -1,14 +1,13 @@
 import React from 'react';
+import {link as linkColors} from '../../colors';
 import SiteNavigation from '../../atoms/navigation/site';
 import FooterSocialIcons from '../../atoms/social/footer';
-
-const navigationTextColor = '#fff';
 
 export default function NavigationBar() {
   return (
     <div css={{background: '#666', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-      <SiteNavigation linkStyles={{color: navigationTextColor}} />
-      <FooterSocialIcons color={navigationTextColor} />
+      <SiteNavigation variant="inverted" />
+      <FooterSocialIcons variant="inverted" color={linkColors.inverted} />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
 import layoutStyles from '../../../layoutStyles.json';
 import ExternalLink from '../../links/external';
+import {link as linkColors} from '../../../colors';
 
 const iconSize = 32;
 const listStyles = {
@@ -16,8 +17,8 @@ const listStyles = {
 const listItemStyles = {padding: '0 0 0 0.5em', height: iconSize};
 const labelStyles = {display: 'none'};
 
-export default function FooterSocialIcons({color}) {
-  const iconColor = color || '#000';
+export default function FooterSocialIcons({variant}) {
+  const iconColor = 'inverted' === variant ? linkColors.inverted : linkColors.default;
   const TwitterIcon = hovered => <Icon fill={hovered ? '#ccc' : iconColor} size={iconSize} name="twitter" />;
   const GithubIcon = hovered => <Icon fill={hovered ? '#ccc' : iconColor} size={iconSize} name="github" />;
   const [hoverableTwitterIcon] = useHover(TwitterIcon);
@@ -41,4 +42,4 @@ export default function FooterSocialIcons({color}) {
   );
 }
 
-FooterSocialIcons.propTypes = {color: string};
+FooterSocialIcons.propTypes = {variant: string};

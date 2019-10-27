@@ -1,6 +1,7 @@
 {
   "link": {
     "default": "#099",
-    "hover": "#00b3b3"
+    "hover": "#00b3b3",
+    "inverted": "#fff"
   }
 }

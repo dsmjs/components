@@ -1,27 +1,17 @@
 import React from 'react';
-import {shape} from 'prop-types';
-import Link from 'gatsby-link';
+import {string} from 'prop-types';
 import layoutStyles from '../../../layoutStyles.json';
+import InternalLink from '../../links/internal';
 
 const listItemStyles = {padding: '0.5em', paddingLeft: 0};
 
-export default function SiteNavigation({linkStyles}) {
-  const enhancedLinkStyles = {
-    fontWeight: 700,
-    textDecoration: 'none',
-    ':hover': {textDecoration: 'underline'},
-    ...linkStyles
-  };
-
+export default function SiteNavigation({variant}) {
   return (
     <ol css={{listStyle: 'none', display: 'flex', margin: 0, paddingLeft: layoutStyles.innerGutterWidth}}>
-      <li css={listItemStyles}><Link css={enhancedLinkStyles} to="/">Home</Link></li>
-      <li css={listItemStyles}>
-        <Link css={enhancedLinkStyles} to="/archive">Past Meetings</Link>
-      </li>
+      <li css={listItemStyles}><InternalLink to="/" variant={variant}>Home</InternalLink></li>
+      <li css={listItemStyles}><InternalLink to="/archive" variant={variant}>Past Meetings</InternalLink></li>
     </ol>
   );
 }
 
-SiteNavigation.propTypes = {linkStyles: shape()};
-SiteNavigation.defaultProps = {linkStyles: {}};
+SiteNavigation.propTypes = {variant: string};
