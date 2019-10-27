@@ -1,10 +1,9 @@
 import React from 'react';
 import {node, string} from 'prop-types';
-
-const styles = {textDecoration: 'none', ':hover': {textDecoration: 'underline', color: '#00b3b3'}, color: '#099'};
+import {link} from '../../styles';
 
 export default function ExternalLink({to, children}) {
-  return <a href={to} css={styles}>{children}</a>;
+  return <a href={to} css={link}>{children}</a>;
 }
 
 ExternalLink.propTypes = {

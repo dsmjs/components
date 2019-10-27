@@ -3,12 +3,12 @@ import {string, node} from 'prop-types';
 import {Div} from 'glamorous';
 import Header from '../../molecules/header';
 import Footer from '../footer';
-import globalStyles from '../../styles.json';
+import {fontFamily, fontSize} from '../../styles';
 import layoutStyles from '../../layoutStyles.json';
 
 export default function Layout({sponsor, location, children}) {
   return (
-    <Div css={{...globalStyles, maxWidth: 1000, margin: '1em auto', backgroundColor: '#fff'}}>
+    <Div css={{fontFamily, fontSize, maxWidth: 1000, margin: '1em auto', backgroundColor: '#fff'}}>
       <Header sponsor={sponsor} location={location} />
       <div style={{padding: `0 ${layoutStyles.innerGutterWidth}px`}}>
         {children}

@@ -2,7 +2,7 @@ import React from 'react';
 import {configure, addDecorator, getStorybook, setAddon} from '@storybook/react';
 import {Div} from 'glamorous';
 import createPercyAddon from '@percy-io/percy-storybook';
-import globalStyles from '../src/styles.json';
+import {fontFamily, fontSize} from '../src/styles';
 
 global.__PATH_PREFIX__ = '';                                            // eslint-disable-line no-underscore-dangle
 
@@ -10,7 +10,7 @@ const {percyAddon, serializeStories} = createPercyAddon();
 setAddon(percyAddon);
 
 addDecorator(story => (
-  <Div css={globalStyles}>
+  <Div css={{fontFamily, fontSize}}>
     {story()}
   </Div>
 ));
