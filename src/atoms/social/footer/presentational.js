@@ -3,6 +3,7 @@ import {string} from 'prop-types';
 import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
 import layoutStyles from '../../../layoutStyles.json';
+import ExternalLink from '../../links/external';
 
 const iconSize = 32;
 const listStyles = {
@@ -25,16 +26,16 @@ export default function FooterSocialIcons({color}) {
   return (
     <ul css={listStyles}>
       <li css={listItemStyles}>
-        <a href="https://twitter.com/dsmjs">
+        <ExternalLink to="https://twitter.com/desmoinesjs">
           {hoverableTwitterIcon}
           <span css={labelStyles}>Twitter</span>
-        </a>
+        </ExternalLink>
       </li>
       <li css={listItemStyles}>
-        <a href="https://github.com/dsmjs">
+        <ExternalLink to="https://github.com/dsmjs">
           {hoverableGithubIcon}
           <span css={labelStyles}>GitHub</span>
-        </a>
+        </ExternalLink>
       </li>
     </ul>
   );
