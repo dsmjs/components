@@ -8,13 +8,26 @@ suite('hoverable link', () => {
   test('that the social link renders', () => {
     const account = any.word();
     const service = any.word();
+    const mouseEnterHandler = () => undefined;
+    const mouseLeaveHandler = () => undefined;
 
     const wrapper = shallow(
-      <HoverableLink hovered={false} account={account} brandColor={any.word()} service={service} />
+      <HoverableLink
+        hovered={false}
+        account={account}
+        brandColor={any.word()}
+        service={service}
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
+      />
     );
-    const externalLink = wrapper.find('li ExternalLink');
+    const listItem = wrapper.find('li');
+    const externalLink = listItem.find('ExternalLink');
     const textContainer = externalLink.find('span');
     const icon = externalLink.find('Icon');
+
+    assert.equal(listItem.prop('onMouseEnter'), mouseEnterHandler);
+    assert.equal(listItem.prop('onMouseLeave'), mouseLeaveHandler);
 
     assert.equal(externalLink.prop('to'), `https://${service}.com/${account}`);
     assert.equal(textContainer.text(), account);

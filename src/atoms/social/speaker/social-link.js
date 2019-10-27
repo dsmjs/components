@@ -1,5 +1,5 @@
 import React from 'react';
-import {bool, string} from 'prop-types';
+import {bool, func, string} from 'prop-types';
 import Icon from 'react-simple-icons';
 import ExternalLink from '../../links/external';
 
@@ -13,9 +13,9 @@ const listItemStyles = {
 };
 export const nonHoveredIconColor = '#888';
 
-export default function SocialLink({hovered, service, account, brandColor}) {
+export default function SocialLink({hovered, service, account, brandColor, onMouseEnter, onMouseLeave}) {
   return (
-    <li css={listItemStyles}>
+    <li css={listItemStyles} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       <ExternalLink to={`https://${service}.com/${account}`}>
         <Icon fill={hovered ? brandColor : nonHoveredIconColor} size={iconSize} name={service} />
         <span>{account}</span>
@@ -28,5 +28,7 @@ SocialLink.propTypes = {
   hovered: bool.isRequired,
   service: string.isRequired,
   account: string,
-  brandColor: string.isRequired
+  brandColor: string.isRequired,
+  onMouseEnter: func,
+  onMouseLeave: func
 };
