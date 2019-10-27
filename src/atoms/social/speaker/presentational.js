@@ -1,5 +1,6 @@
 import React from 'react';
 import {string} from 'prop-types';
+import styled from '@emotion/styled';
 import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
 import ExternalLink from '../../links/external';
@@ -27,25 +28,29 @@ const socialItemStyle = {
   alignItems: 'center'
 };
 
+const SocialItem = styled.div`
+  ${socialItemStyle}
+`;
+
 export default function SpeakerSocialIcons({twitter, github}) {
   const nonHoveredIconColor = '#888';
   const TwitterIcon = hovered => (
     <li css={listItemStyles}>
       <ExternalLink to={`https://twitter.com/${twitter}`}>
-        <div css={socialItemStyle}>
+        <SocialItem>
           <Icon fill={hovered ? '#1DA1F2' : nonHoveredIconColor} size={iconSize} name="twitter" />
           <span>{twitter}</span>
-        </div>
+        </SocialItem>
       </ExternalLink>
     </li>
   );
   const GithubIcon = hovered => (
     <li css={listItemStyles}>
       <ExternalLink to={`https://github.com/${github}`}>
-        <div css={socialItemStyle}>
+        <SocialItem>
           <Icon fill={hovered ? '#000' : nonHoveredIconColor} size={iconSize} name="github" />
           <span>{github}</span>
-        </div>
+        </SocialItem>
       </ExternalLink>
     </li>
   );

@@ -86,6 +86,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.22",
     "gatsby-link": "^2.2.20",
     "glamor": "2.20.40",
     "glamorous": "5.0.0",
