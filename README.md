@@ -26,6 +26,10 @@ $ npm install @dsmjs/components --save-prod
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/dsmjs/components)
 [![PRs Welcome][PRs-badge]][PRs-link]
 
+Find common contributing details in our
+[organization-level contribution guide](https://github.com/dsmjs/.github/CONTRIBUTING.md)
+and project specific details below.
+
 ### Dependencies
 
 Use [nvm](https://github.com/creationix/nvm) to enable the expected version of
