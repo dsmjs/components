@@ -3,7 +3,7 @@ import {bool, func, string} from 'prop-types';
 import Icon from 'react-simple-icons';
 import ExternalLink from '../../links/external';
 
-const iconSize = 16;
+const iconSize = 20;
 const listItemStyles = {
   padding: '0 0 0 .5em',
   height: iconSize,
@@ -16,7 +16,7 @@ export const nonHoveredIconColor = '#888';
 export default function SocialLink({hovered, service, account, brandColor, onMouseEnter, onMouseLeave}) {
   return (
     <li css={listItemStyles} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      <ExternalLink to={`https://${service}.com/${account}`}>
+      <ExternalLink to={`https://${service}.com/${account}`} variant="inlineIconWithText">
         <Icon fill={hovered ? brandColor : nonHoveredIconColor} size={iconSize} name={service} />
         <span>{account}</span>
       </ExternalLink>

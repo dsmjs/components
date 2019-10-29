@@ -30,6 +30,7 @@ suite('hoverable link', () => {
     assert.equal(listItem.prop('onMouseLeave'), mouseLeaveHandler);
 
     assert.equal(externalLink.prop('to'), `https://${service}.com/${account}`);
+    assert.equal(externalLink.prop('variant'), 'inlineIconWithText');
     assert.equal(textContainer.text(), account);
 
     assert.equal(icon.prop('fill'), nonHoveredIconColor);

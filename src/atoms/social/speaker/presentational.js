@@ -8,7 +8,7 @@ const listStyles = {
   display: 'flex',
   alignItems: 'center',
   margin: 0,
-  padding: 0,
+  padding: '0 0 0 .5em',
   fontSize: 20
 };
 
