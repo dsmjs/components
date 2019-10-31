@@ -3,7 +3,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links';
-import SiteNavigation from './index';
+import SiteNavigation from './component';
 
 storiesOf('Atoms/Navigation/Site Navigation', module)
   .addDecorator(storyRouter({

@@ -2,7 +2,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
-import LocationBar from './index';
+import LocationBar from './component';
 
 storiesOf('Atoms/Header Bars/Location Bar', module)
   .add('default', () => <LocationBar location={`${any.word()} ${any.word()}`} />);

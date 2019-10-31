@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
 import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links';
-import ArchiveListItem from './index';
+import ArchiveListItem from './component';
 
 const meeting = {
   node: {
