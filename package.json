@@ -11,7 +11,7 @@
   ],
   "repository": "dsmjs/components",
   "bugs": "https://github.com/dsmjs/components/issues",
-  "homepage": "https://github.com/dsmjs/components#readme",
+  "homepage": "https://dsmjs.com/components/",
   "scripts": {
     "clean": "rimraf lib/",
     "lint:md": "remark --frail .",
