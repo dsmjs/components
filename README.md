@@ -54,6 +54,11 @@ $ npm start
 Navigate to the [running instance](http://localhost:6006) of
 [storybook](https://storybook.js.org/)
 
+### Development
+
+Find details about the project structure and more specific details about our
+approach to building components [here](src/README.md).
+
 ### Verification
 
 Ensure that your changes pass the automated verification scripts
