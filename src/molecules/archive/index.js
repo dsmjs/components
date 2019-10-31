@@ -4,7 +4,7 @@ import ArchiveListItem from '../../atoms/archive-list-item';
 
 export default function ArchiveList({meetings}) {
   return (
-    <ol style={{listStyleType: 'none'}}>
+    <ol css={{listStyleType: 'none'}}>
       {meetings.map(meeting => <li key={meeting.node.fields.slug}><ArchiveListItem meeting={meeting} /></li>)}
     </ol>
   );

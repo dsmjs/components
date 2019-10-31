@@ -9,7 +9,7 @@ suite('logo test', () => {
     const wrapper = shallow(<Logo />);
     const image = wrapper.find('LogoSvg');
 
-    assert.deepEqual(image.prop('style'), {});
+    assert.deepEqual(image.prop('css'), {});
   });
 
   test('that styles can be overridden', () => {
@@ -18,6 +18,6 @@ suite('logo test', () => {
     const wrapper = shallow(<Logo styleOverrides={overrides} />);
     const image = wrapper.find('LogoSvg');
 
-    assert.equal(image.prop('style'), overrides);
+    assert.equal(image.prop('css'), overrides);
   });
 });

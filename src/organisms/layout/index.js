@@ -10,7 +10,7 @@ export default function Layout({sponsor, location, children}) {
   return (
     <Div css={{fontFamily, fontSize, maxWidth: 1000, margin: '1em auto', backgroundColor: '#fff'}}>
       <Header sponsor={sponsor} location={location} />
-      <div style={{padding: `0 ${layoutStyles.innerGutterWidth}px`}}>
+      <div css={{padding: `0 ${layoutStyles.innerGutterWidth}px`}}>
         {children}
       </div>
       <Footer />
