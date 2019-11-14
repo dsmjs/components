@@ -1,6 +1,5 @@
 import React from 'react';
 import {configure, addDecorator, getStorybook, setAddon} from '@storybook/react';
-import {Div} from 'glamorous';
 import createPercyAddon from '@percy-io/percy-storybook';
 import {fontFamily, fontSize} from '../src/styles';
 
@@ -10,9 +9,9 @@ const {percyAddon, serializeStories} = createPercyAddon();
 setAddon(percyAddon);
 
 addDecorator(story => (
-  <Div css={{fontFamily, fontSize}}>
+  <div css={{fontFamily, fontSize}}>
     {story()}
-  </Div>
+  </div>
 ));
 
 function loadStories() {
