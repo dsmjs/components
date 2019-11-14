@@ -1,12 +1,11 @@
 import React from 'react';
-import glamorous from 'glamorous';
 import styles from '../styles';
 
-const RecurrenceBarDiv = glamorous.div({
+const recurrenceBarStyles = {
   ...styles,
   background: '#AD5472'
-});
+};
 
 export default function RecurrenceBar() {
-  return <RecurrenceBarDiv>Second Tuesday every month</RecurrenceBarDiv>;
+  return <div css={recurrenceBarStyles}>Second Tuesday every month</div>;
 }

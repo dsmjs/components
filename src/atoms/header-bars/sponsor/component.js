@@ -1,15 +1,14 @@
 import React from 'react';
 import {string} from 'prop-types';
-import glamorous from 'glamorous';
 import styles from '../styles';
 
-const SponsorBarDiv = glamorous.div({
+const sponsorBarStyles = {
   ...styles,
   background: '#6C9380'
-});
+};
 
 export default function SponsorBar({sponsor}) {
-  return <SponsorBarDiv>{sponsor}</SponsorBarDiv>;
+  return <div css={sponsorBarStyles}>{sponsor}</div>;
 }
 
 SponsorBar.propTypes = {sponsor: string.isRequired};

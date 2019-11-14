@@ -1,15 +1,14 @@
 import React from 'react';
 import {string} from 'prop-types';
-import glamorous from 'glamorous';
 import styles from '../styles';
 
-const LocationBarDiv = glamorous.div({
+const locationBarStyles = {
   ...styles,
   background: '#F07C6C'
-});
+};
 
 export default function LocationBar({location}) {
-  return <LocationBarDiv>{location}</LocationBarDiv>;
+  return <div css={locationBarStyles}>{location}</div>;
 }
 
 LocationBar.propTypes = {location: string.isRequired};
