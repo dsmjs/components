@@ -7,6 +7,6 @@ suite('Meeting Recurrence bar', () => {
   test('that the recurrence schedule is shown', () => {
     const wrapper = shallow(<RecurrenceBar />);
 
-    assert.equal(wrapper.shallow().text(), 'Second Tuesday every month');
+    assert.equal(wrapper.text(), 'Second Tuesday every month');
   });
 });

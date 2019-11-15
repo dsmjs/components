@@ -10,6 +10,6 @@ suite('sponsor bar', () => {
 
     const wrapper = shallow(<SponsorBar sponsor={sponsor} />);
 
-    assert.equal(wrapper.shallow().text(), sponsor);
+    assert.equal(wrapper.text(), sponsor);
   });
 });
