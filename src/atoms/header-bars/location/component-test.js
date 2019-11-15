@@ -10,6 +10,6 @@ suite('location bar', () => {
 
     const wrapper = shallow(<LocationBar location={location} />);
 
-    assert.equal(wrapper.dive().text(), location);
+    assert.equal(wrapper.text(), location);
   });
 });
