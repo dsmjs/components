@@ -2,20 +2,14 @@ language: node_js
 dist: trusty
 notifications:
   email: false
-branches:
-  except:
-  - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
+import:
+  - source: dsmjs/.travis-ci:authenticated-semantic-release.yml
 before_install: curl ifconfig.co
 after_install: npm ls >/dev/null
 before_deploy:
 - git config --global user.email "$GIT_EMAIL"
 - git config --global user.name "dsmJS Bot"
 deploy:
-- provider: script
-  skip_cleanup: true
-  script: npx semantic-release@beta
-  on:
-    all_branches: true
 - provider: script
   skip_cleanup: true
   script: npm run deploy
