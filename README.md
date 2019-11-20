@@ -2,7 +2,7 @@
 
 React components for the [dsmjs.com](https://dsmjs.com) site
 
-[![Build Status](https://img.shields.io/travis/dsmjs/components.svg?style=flat&branch=master)](https://travis-ci.org/dsmjs/components)
+[![Build Status](https://img.shields.io/travis/com/dsmjs/components.svg?style=flat&branch=master)](https://travis-ci.com/dsmjs/components)
 [![Codecov](https://img.shields.io/codecov/c/github/dsmjs/components.svg)](https://codecov.io/github/dsmjs/components)
 
 ## Usage
