@@ -2,5 +2,5 @@ _extends: .github
 repository:
   name: components
   description: React components for the dsmjs.com site
-  homepage: 'https://dsmjs.com/components/'
+  homepage: 'https://components.dsmjs.com/'
   private: false
