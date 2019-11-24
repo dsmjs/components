@@ -1,19 +1,13 @@
-version: ~> 1.0
+version: "~> 1.0"
 language: node_js
 dist: trusty
 notifications:
   email: false
 import:
-  - source: dsmjs/.travis-ci:authenticated-semantic-release.yml
+- source: dsmjs/.travis-ci:authenticated-semantic-release.yml
+- source: dsmjs/.travis-ci:authenticated-netlify-deploy.yml
 before_install: curl ifconfig.co
 after_install: npm ls >/dev/null
-before_deploy:
-- git config --global user.email "$GIT_EMAIL"
-- git config --global user.name "dsmJS Bot"
-deploy:
-- provider: script
-  skip_cleanup: true
-  script: npm run deploy
 after_success:
 - npm run coverage:report
 - npm run snapshot
@@ -21,5 +15,5 @@ env:
   global:
   - FORCE_COLOR=1
   - NPM_CONFIG_COLOR=always
-  - secure: ogrRqV1ZSVAIGzS9GLhtX7eJDiP9DnsE+rqwIaKpIERY203RwYKD3EoTOAMnZcG1pe6Zcs2JHazflAOECgMdsb1c6xTQayNCC80K/BuqH0T2YMfB6AU5dLQipSKlbHhRafJjx5BIJ7PGAzZZXXSGICPc7rc3/9I0+o5hKFCw5717qDvmK16zTAE4Dbyfeks4aNf+fNFwrQXL1dXEUZHu4gZDvFUwvIHzmWl4GrLqtopwMdKvvWE2b8xKla+Ka1fsO/HmyVe85v+zDVpiC9Nfn5JpuNOfdKMetQRc+B/7jqMY9VO6bI8dYeCzleoHw2K8LZ5k6hgV97xHycqRvbyKHFPxFQAP55yNzg3FHg3ekwv6f3++Og2VJdtdCftwDcuHS/7dFrQ3tsUlz6L8fCr9GG3Ae4CxWMe2Vzr4/S/sVwmVWOD/GSoOCLGuxG8dqvS/7y+r/eOn7MBIRfLB7GxQ39QzY6bPE3+Kl2l+Op0A1sF8K2EM9SgoWBZS3ctVg+DnSP5zSs2p50EF46ST8izcnnb9JMCEhUoavvzhWDTOrzlQhTB+eQayLlbnPdIUDnctrezbpkG7io/7f0p2cwhGXvH2nLUKQH7KYDB0I0h6Oly20c+EbVWxzosDARekjfHRzeygc+7F2aaLerWBEiWWEQtwNUq+y6YHUtR+ZhST86c=
   - secure: dX25+t+eTtzZXfhIcqf9XRKyVmL+lQ4BaaqP6gGD/VOxmtzUflQ44FkBLVu+EN+Kgl683WglVKZT5WcpiePiFTtbidWFmufsXHnOhvgI2EcptC8AP3lazNFtseVx/WNG9ovLPM0YwTfBPEx1kJBhZoez7YqbK0bTNOak7q2oClSeu3o8qEsPlhM3kInnwOht77+H+GPDA//PmYAt+6SMU/vDCJBfIHncL6vOtgD+pFOCJtG5oB1dU5PN5TjAMPnWAhBYqx05Orfcy/RbTBqwul9yODdDuI5vUxblmAsPWlw7zLEpZIzy/MBqZcaJGsskPGiqGLXVzlmWalAyWDhgujcKwUDUzs9ozJqLc3CbCHyb4ULePkHq5D3/9bU52+nju0k6TNubsh8OGhm0d6uJ5GMgkPD+KAtcpYHiB4CzLz7bDDZ/E5pgJ+AYIxm/UHcBXIGa5bUfTC3FxunHXaGWAiIQd+2yT7tIvS4TbC6RkOy1zoJDek4XlJa8xbRmS6IdPJeVV31wW/XLxg8gelLAkX+QUyom031/H5waD/UhniR/1xaOA0mAQ5Eoxs+MfcGlzoxCzY9E7rFubMauJYDx0ln/M9jNHjQ5t6SaxG7RbP7oJagKeKCHTX2KxWZdFMqOBDu/AMJ0iBeuiAixfMgpoC4jxPAxSnlx5ypur/tsPcc=
+  - secure: eReXqYlN1EDNt3ehGNtrQgOEBYefTPhmqYDGQxylzDf3DiqHQl93jvWXRWwLSQAy/WJ51eLawPx4dYS2Su2LwOrXD+ZVgg5uCIzkd7I5FnLu3PsU2ygXC/KYDNuuwR7PRHrb1tZF3fSOJnlk++TziQ13wy9CY/OUAZZEp1hUBXuyIIMeXI05gfTYzAP85YBYyQ2NIHQIYE64mdRgJ6ivl5E65o+F/8bnI4dm4vFyYHuuSLWJ2Vez9Nm2kJi0SLwhOWvf7COoUwOtbgZunJLzSGGzaUWdTZ0RVv2jxWQED6X1LYIDP2LHBWIsa5jJXYlyWM+V0EvpE2lLXRB5AtIBvMGrbcrSmoWGYPNVLHidbt/rYVGt7L1QlHCb50g2o9Z0CAKgRUBEiilBK94JVS3T1VMgtZBxtoR0Efvjk8NEK10gYCGf+UTLxI7R7/WuRFwLIcjYqnOMgqs5xzkr0b8NvK2YHENQaj56ZYXW0qdi5jPYAREDKVCgme63BqjCNYa1btbUmJ7E+bAuXTgUCjJA1oFK0FsfeZ/MrfoHymi5bm5pTeQJhWN30L/qRzFDhu0oKPI5FfpS1qD0QHHo6of0tgslK1N7R1ZqAC76oeyUNm9+pUM9LfsX8bwehoVyFCfAe+Ae8799UbVqSiRLn23Zsd59H3R4uJxO/fJ6afoC+as=
