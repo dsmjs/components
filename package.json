@@ -26,7 +26,8 @@
     "build:js": "rollup --config",
     "build": "run-s clean build:*",
     "build-storybook": "build-storybook --quiet",
-    "snapshot": "build-storybook && percy-storybook --widths=320,1280",
+    "presnapshot": "run-s build-storybook",
+    "snapshot": "percy-storybook --widths=320,1280",
     "predeploy:netlify": "run-s build-storybook",
     "deploy:netlify": "netlify deploy --dir=./public --prod",
     "prepack": "run-s build"
