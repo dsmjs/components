@@ -4,7 +4,7 @@ import Icon from 'react-simple-icons';
 import {useHover} from 'react-use';
 import layoutStyles from '../../../layoutStyles.json';
 import ExternalLink from '../../links/external';
-import {link as linkColors} from '../../../colors';
+import {link as linkColors} from '../../../colors.json';
 
 const iconSize = 32;
 const listStyles = {
