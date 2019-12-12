@@ -1,5 +1,5 @@
 import React from 'react';
-import {link as linkColors} from '../../colors';
+import {link as linkColors} from '../../colors.json';
 import SiteNavigation from '../../atoms/navigation/site';
 import FooterSocialIcons from '../../atoms/social/footer';
 

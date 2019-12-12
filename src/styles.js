@@ -1,4 +1,4 @@
-import {link as linkColors} from './colors';
+import {link as linkColors} from './colors.json';
 
 export const fontFamily = 'Quicksand, sans-serif';
 export const fontSize = 24;
