@@ -87,7 +87,7 @@
     "react-dom": "^16.0.0"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.21",
+    "@emotion/core": "^10.0.27",
     "gatsby-link": "^2.2.20",
     "glamorous": "5.0.0",
     "prop-types": "15.7.2",
