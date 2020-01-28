@@ -57,7 +57,7 @@
     "chai": "^4.2.0",
     "codecov": "3.6.1",
     "commitlint-config-dsmjs": "1.0.16",
-    "cz-conventional-changelog": "3.0.2",
+    "cz-conventional-changelog": "3.1.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
     "gh-pages": "2.1.1",
