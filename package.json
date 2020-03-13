@@ -43,7 +43,7 @@
     "@babel/register": "^7.6.2",
     "@dsmjs/babel-preset": "1.0.28",
     "@dsmjs/eslint-config": "1.0.31",
-    "@dsmjs/eslint-config-mocha": "1.0.8",
+    "@dsmjs/eslint-config-mocha": "1.0.9",
     "@dsmjs/eslint-config-react": "1.1.29",
     "@dsmjs/remark-preset-lint": "1.0.2",
     "@emotion/babel-preset-css-prop": "^10.0.27",
