@@ -22,7 +22,7 @@ $ npm install @dsmjs/components --save-prod
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
-[![Greenkeeper badge](https://badges.greenkeeper.io/dsmjs/components.svg)](https://greenkeeper.io/)
+[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=dsmjs/components)](https://dependabot.com/)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/dsmjs/components)
 [![PRs Welcome][PRs-badge]][PRs-link]
 
