@@ -27,7 +27,7 @@
     "presnapshot": "run-s build-storybook",
     "snapshot": "percy-storybook --widths=320,1280",
     "predeploy:netlify": "run-s build-storybook",
-    "deploy:netlify": "netlify deploy --dir=./storybook-static --prod",
+    "deploy:netlify": "netlify deploy --dir=./storybook-static",
     "prepack": "run-s build"
   },
   "config": {
