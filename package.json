@@ -16,6 +16,7 @@
     "clean": "rimraf lib/",
     "lint:md": "remark --frail .",
     "lint:js": "eslint . .storybook --cache",
+    "lint:travis": "travis-lint .travis.yml",
     "tests:unit": "mocha 'src/**/*-test.js'",
     "test": "npm-run-all --print-label --parallel lint:* --sequential coverage --parallel build build-storybook",
     "coverage": "nyc run-s tests:unit",
@@ -76,6 +77,7 @@
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "storybook-router": "0.3.4",
+    "travis-lint": "^1.0.0",
     "validate-commit-msg": "2.14.0",
     "webpack": "^4.41.1"
   },

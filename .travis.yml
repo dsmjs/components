@@ -2,7 +2,7 @@ version: "~> 1.0"
 notifications:
   email: false
 import:
-- import: form8ion/.travis-ci:node.yml
+- source: form8ion/.travis-ci:node.yml
 - source: dsmjs/.travis-ci:authenticated-semantic-release.yml
 - source: dsmjs/.travis-ci:authenticated-netlify-deploy.yml
 after_success:
