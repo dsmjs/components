@@ -46,7 +46,7 @@
     "@dsmjs/eslint-config": "1.0.33",
     "@dsmjs/eslint-config-mocha": "1.0.9",
     "@dsmjs/eslint-config-react": "1.1.30",
-    "@dsmjs/remark-preset-lint": "1.0.5",
+    "@dsmjs/remark-preset-lint": "1.0.6",
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "^5.2.4",
