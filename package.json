@@ -44,7 +44,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/register": "^7.6.2",
-    "@dsmjs/babel-preset": "1.0.33",
+    "@dsmjs/babel-preset": "1.0.34",
     "@dsmjs/eslint-config": "1.0.34",
     "@dsmjs/eslint-config-mocha": "1.0.9",
     "@dsmjs/eslint-config-react": "1.1.32",
