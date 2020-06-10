@@ -8,10 +8,12 @@ suite('meeting', () => {
   test('that the meeting is composed of meeting, speaker, and talk details', () => {
     const meeting = any.simpleObject();
     const host = any.simpleObject();
-    const talks = any.listOf(() => ({talk: ({frontmatter: {...any.simpleObject(), title: any.sentence()}})}));
     const talkContent = any.string();
+    const talks = any.listOf(() => ({
+      talk: ({frontmatter: {...any.simpleObject(), title: any.sentence()}, html: talkContent})
+    }));
 
-    const wrapper = shallow(<Meeting meeting={meeting} host={host} talks={talks} content={talkContent} />);
+    const wrapper = shallow(<Meeting meeting={meeting} host={host} talks={talks} />);
     const meetingDetails = wrapper.find('MeetingDetails');
     const talkComponents = wrapper.find('Talk');
 
