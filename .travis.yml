@@ -5,7 +5,7 @@ import:
 - source: form8ion/.travis-ci:node.yml
 - source: form8ion/.travis-ci:chromatic.yml
 - source: dsmjs/.travis-ci:authenticated-semantic-release-stage.yml
-- source: dsmjs/.travis-ci:authenticated-netlify-deploy.yml
+- source: dsmjs/.travis-ci:authenticated-netlify-deploy-stage.yml
 
 jobs:
   include:

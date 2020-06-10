@@ -41,6 +41,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "lib/"
+  ],
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/register": "^7.6.2",
