@@ -4,11 +4,19 @@ notifications:
 import:
 - source: form8ion/.travis-ci:node.yml
 - source: form8ion/.travis-ci:chromatic.yml
-- source: dsmjs/.travis-ci:authenticated-semantic-release.yml
+- source: dsmjs/.travis-ci:authenticated-semantic-release-stage.yml
 - source: dsmjs/.travis-ci:authenticated-netlify-deploy.yml
-after_success:
-- npm run coverage:report
-- npm run snapshot
+
+jobs:
+  include:
+  - stage: test
+    after_success:
+    - npm run coverage:report
+    - npm run snapshot
+stages:
+  - test
+  - deploy
+
 env:
   global:
   - secure: dX25+t+eTtzZXfhIcqf9XRKyVmL+lQ4BaaqP6gGD/VOxmtzUflQ44FkBLVu+EN+Kgl683WglVKZT5WcpiePiFTtbidWFmufsXHnOhvgI2EcptC8AP3lazNFtseVx/WNG9ovLPM0YwTfBPEx1kJBhZoez7YqbK0bTNOak7q2oClSeu3o8qEsPlhM3kInnwOht77+H+GPDA//PmYAt+6SMU/vDCJBfIHncL6vOtgD+pFOCJtG5oB1dU5PN5TjAMPnWAhBYqx05Orfcy/RbTBqwul9yODdDuI5vUxblmAsPWlw7zLEpZIzy/MBqZcaJGsskPGiqGLXVzlmWalAyWDhgujcKwUDUzs9ozJqLc3CbCHyb4ULePkHq5D3/9bU52+nju0k6TNubsh8OGhm0d6uJ5GMgkPD+KAtcpYHiB4CzLz7bDDZ/E5pgJ+AYIxm/UHcBXIGa5bUfTC3FxunHXaGWAiIQd+2yT7tIvS4TbC6RkOy1zoJDek4XlJa8xbRmS6IdPJeVV31wW/XLxg8gelLAkX+QUyom031/H5waD/UhniR/1xaOA0mAQ5Eoxs+MfcGlzoxCzY9E7rFubMauJYDx0ln/M9jNHjQ5t6SaxG7RbP7oJagKeKCHTX2KxWZdFMqOBDu/AMJ0iBeuiAixfMgpoC4jxPAxSnlx5ypur/tsPcc=
