@@ -16,7 +16,10 @@ const meetings = [
   {
     node: {
       fields: {slug: '/meeting-2'},
-      frontmatter: {date: any.date(), talks: [{talk: {frontmatter: {title: any.sentence()}}}]}
+      frontmatter: {
+        date: any.date(),
+        talks: [{talk: {frontmatter: {title: any.sentence()}}}, {talk: {frontmatter: {title: any.sentence()}}}]
+      }
     }
   }
 ];
