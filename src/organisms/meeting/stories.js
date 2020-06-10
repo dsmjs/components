@@ -11,15 +11,16 @@ const talk = {
   title: any.sentence(),
   speaker: {frontmatter: {name: `${any.word()} ${any.word()}`, twitter: any.word(), github: any.word()}}
 };
+const talks = [{talk: {frontmatter: talk}}];
 
 storiesOf('Organisms/Meeting', module)
-  .add('default', () => <Meeting meeting={meeting} host={host} talk={talk} content={talkContent} />)
+  .add('default', () => <Meeting meeting={meeting} host={host} talks={talks} content={talkContent} />)
   .add('current', () => (
     <CurrentMeeting
       meeting={meeting}
       sponsor={{name: any.string(), site: any.url()}}
       host={host}
-      talk={talk}
+      talks={talks}
       content={talkContent}
     />
   ));
