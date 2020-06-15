@@ -8,7 +8,7 @@ suite('archived meetings list molecule', () => {
   test('that the meetings are listed', () => {
     const meetings = any.listOf(() => ({
       ...any.simpleObject(),
-      node: {fields: {slug: any.url()}, frontmatter: {date: any.date()}}
+      node: {fields: {slug: any.url()}, frontmatter: {date: any.date(), talks: []}}
     }));
 
     const wrapper = shallow(<ArchiveList meetings={meetings} />);

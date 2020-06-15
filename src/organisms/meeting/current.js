@@ -1,12 +1,12 @@
 import React from 'react';
-import {string, shape} from 'prop-types';
+import {arrayOf, shape} from 'prop-types';
 import SponsorDetails from '../../molecules/sponsor-details';
 import Meeting from '.';
 
-export default function CurrentMeeting({meeting, sponsor, host, talk, content}) {
+export default function CurrentMeeting({meeting, sponsor, host, talks}) {
   return (
     <section>
-      <Meeting meeting={meeting} host={host} talk={talk} content={content} />
+      <Meeting meeting={meeting} host={host} talks={talks} />
       <SponsorDetails sponsor={sponsor} />
     </section>
   );
@@ -15,7 +15,6 @@ export default function CurrentMeeting({meeting, sponsor, host, talk, content}) 
 CurrentMeeting.propTypes = {
   meeting: shape(),
   sponsor: shape(),
-  talk: shape(),
-  host: shape(),
-  content: string
+  talks: arrayOf(shape()),
+  host: shape()
 };

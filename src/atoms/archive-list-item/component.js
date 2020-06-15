@@ -1,5 +1,5 @@
 import React from 'react';
-import {shape, string} from 'prop-types';
+import {arrayOf, shape, string} from 'prop-types';
 import InternalLink from '../links/internal';
 
 export default function ArchiveListItem({meeting}) {
@@ -8,7 +8,9 @@ export default function ArchiveListItem({meeting}) {
   return (
     <>
       <h4><InternalLink to={meeting.node.fields.slug}>{meetingDetails.date}</InternalLink></h4>
-      <p css={{marginLeft: '1em'}}>{meetingDetails.talk.frontmatter.title}</p>
+      <ol css={{'list-style': 'none', li: {marginBottom: 15}}}>
+        {meetingDetails.talks.map(talk => <li key={talk.talk.frontmatter.title}>{talk.talk.frontmatter.title}</li>)}
+      </ol>
     </>
   );
 }
@@ -18,11 +20,13 @@ ArchiveListItem.propTypes = {
     node: shape({
       frontmatter: shape({
         date: string.isRequired,
-        talk: shape({
-          frontmatter: shape({
-            title: string.isRequired
+        talks: arrayOf(shape({
+          talk: shape({
+            frontmatter: shape({
+              title: string.isRequired
+            }).isRequired
           }).isRequired
-        })
+        })).isRequired
       }).isRequired,
       fields: shape({slug: string.isRequired}).isRequired
     }).isRequired

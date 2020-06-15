@@ -1,13 +1,13 @@
 import React from 'react';
-import {string, shape} from 'prop-types';
+import {arrayOf, string, shape} from 'prop-types';
 import MeetingDetails from '../../molecules/meeting-details';
 import Talk from '../../molecules/talk';
 
-export default function Meeting({meeting, host, talk, content}) {
+export default function Meeting({meeting, host, talks}) {
   return (
     <>
       <MeetingDetails meeting={meeting} host={host} />
-      <Talk talk={talk} content={content} />
+      {talks.map(({talk}) => <Talk talk={talk.frontmatter} content={talk.html} key={talk.frontmatter.title} />)}
     </>
   );
 }
@@ -15,6 +15,5 @@ export default function Meeting({meeting, host, talk, content}) {
 Meeting.propTypes = {
   meeting: shape(),
   host: shape(),
-  talk: shape(),
-  content: string
+  talks: arrayOf(shape({talk: shape({frontmatter: shape().isRequired, html: string.isRequired}).isRequired}))
 };

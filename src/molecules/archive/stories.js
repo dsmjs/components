@@ -7,8 +7,18 @@ import {linkTo} from '@storybook/addon-links';
 import ArchiveList from './index';
 
 const meetings = [
-  {node: {fields: {slug: '/meeting-1'}, frontmatter: {date: any.date(), talk: {frontmatter: {title: any.sentence()}}}}},
-  {node: {fields: {slug: '/meeting-2'}, frontmatter: {date: any.date(), talk: {frontmatter: {title: any.sentence()}}}}}
+  {
+    node: {
+      fields: {slug: '/meeting-1'},
+      frontmatter: {date: any.date(), talks: [{talk: {frontmatter: {title: any.sentence()}}}]}
+    }
+  },
+  {
+    node: {
+      fields: {slug: '/meeting-2'},
+      frontmatter: {date: any.date(), talks: [{talk: {frontmatter: {title: any.sentence()}}}]}
+    }
+  }
 ];
 
 storiesOf('Molecules/Archive', module)
