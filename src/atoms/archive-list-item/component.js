@@ -8,7 +8,7 @@ export default function ArchiveListItem({meeting}) {
   return (
     <>
       <h4><InternalLink to={meeting.node.fields.slug}>{meetingDetails.date}</InternalLink></h4>
-      <ol css={{'list-style': 'none'}}>
+      <ol css={{'list-style': 'none', li: {marginBottom: 15}}}>
         {meetingDetails.talks.map(talk => <li key={talk.talk.frontmatter.title}>{talk.talk.frontmatter.title}</li>)}
       </ol>
     </>
