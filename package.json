@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rimraf lib/",
     "lint:md": "remark --frail .",
-    "lint:js": "eslint . .storybook --cache",
+    "lint:js": "eslint . .storybook/ --cache",
     "lint:travis": "travis-lint .travis.yml",
     "lint:peer": "npm ls --production >/dev/null",
     "tests:unit": "mocha 'src/**/*-test.js'",
@@ -53,7 +53,7 @@
     "@dsmjs/eslint-config-react": "1.1.32",
     "@dsmjs/remark-preset-lint": "1.0.7",
     "@emotion/babel-preset-css-prop": "^10.0.27",
-    "@percy-io/percy-storybook": "2.1.0",
+    "@percy/storybook": "3.3.0",
     "@storybook/addon-actions": "^5.2.4",
     "@storybook/addon-links": "^5.2.4",
     "@storybook/react": "^5.2.4",
