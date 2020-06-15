@@ -30,7 +30,7 @@
     "snapshot": "percy-storybook --widths=320,1280",
     "predeploy:netlify": "run-s build:storybook",
     "deploy:netlify": "netlify deploy --dir=./storybook-static",
-    "deploy:chromatic": "npx chromatic --build-script-name=build:storybook",
+    "deploy:chromatic": "npx chromatic --build-script-name=build:storybook --exit-once-uploaded",
     "prepack": "run-s build"
   },
   "config": {
