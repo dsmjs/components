@@ -1,8 +1,14 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 import React from 'react';
-import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
 import LocationBar from './component';
 
-storiesOf('Atoms/Header Bars/Location Bar', module)
-  .add('default', () => <LocationBar location={`${any.word()} ${any.word()}`} />);
+export default {
+  title: 'Atoms/Header Bars/Location Bar'
+};
+
+export const Default = () => <LocationBar location={`${any.word()} ${any.word()}`} />;
+
+Default.story = {
+  name: 'default'
+};

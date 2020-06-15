@@ -1,6 +1,12 @@
 import React from 'react';
-import {storiesOf} from '@storybook/react';
 import FooterSocialIcons from '.';
 
-storiesOf('Atoms/Social Icons/Footer', module)
-  .add('default', () => <FooterSocialIcons />);
+export default {
+  title: 'Atoms/Social Icons/Footer'
+};
+
+export const Default = () => <FooterSocialIcons />;
+
+Default.story = {
+  name: 'default'
+};

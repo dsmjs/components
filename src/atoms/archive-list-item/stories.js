@@ -1,6 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 import React from 'react';
-import {storiesOf} from '@storybook/react';
 import any from '@travi/any';
 import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links';
@@ -16,6 +15,13 @@ const meeting = {
   }
 };
 
-storiesOf('Atoms/Archive List-Item', module)
-  .addDecorator(storyRouter({'/meeting-1': linkTo('Organisms/Meeting', 'current')}))
-  .add('default', () => <ArchiveListItem meeting={meeting} />);
+export default {
+  title: 'Atoms/Archive List-Item',
+  decorators: [storyRouter({'/meeting-1': linkTo('Organisms/Meeting', 'current')})]
+};
+
+export const Default = () => <ArchiveListItem meeting={meeting} />;
+
+Default.story = {
+  name: 'default'
+};
