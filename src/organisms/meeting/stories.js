@@ -2,7 +2,7 @@
 import React from 'react';
 import any from '@travi/any';
 import {talkContent} from '../../../.storybook/data/html-content';
-import {CurrentMeeting, Meeting} from '../../index';
+import {CurrentMeeting, Meeting} from '../..';
 
 const meeting = {date: '2018-03-13', time: {start: '6:00pm', end: '7:00pm'}};
 const host = {location: any.string()};

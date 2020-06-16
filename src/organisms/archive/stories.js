@@ -3,7 +3,7 @@ import React from 'react';
 import any from '@travi/any';
 import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links';
-import Archive from './index';
+import {Archive} from '../..';
 
 const meetings = [
   {
