@@ -19,7 +19,9 @@ export default function Pagination({totalPages}) {
           .from({length: totalPages}, (_, index) => ({pageNumber: index + 1}))
           .map(({pageNumber}) => (
             <li key={`page-${pageNumber}`}>
-              <InternalLink to={`/archive/page-${pageNumber}`}>{`${pageNumber}`}</InternalLink>
+              <InternalLink to={1 === pageNumber ? '/archive' : `/archive/page-${pageNumber}`}>
+                {`${pageNumber}`}
+              </InternalLink>
             </li>
           ))
       }

@@ -17,7 +17,7 @@ suite('archive pagination', () => {
       const link = page.find('InternalLink');
       const pageNumber = index + 1;
 
-      assert.equal(link.prop('to'), `/archive/page-${pageNumber}`);
+      assert.equal(link.prop('to'), 0 === index ? '/archive' : `/archive/page-${pageNumber}`);
       assert.equal(link.children().text(), `${pageNumber}`);
     });
   });
