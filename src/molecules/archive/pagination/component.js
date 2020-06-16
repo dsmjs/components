@@ -8,7 +8,8 @@ const listStyles = {
   display: 'flex',
   flexWrap: 'nowrap',
   justifyContent: 'space-evenly',
-  li: {display: 'inline-block'}
+  li: {display: 'inline-block', ':hover': {backgroundColor: '#eee'}},
+  a: {':hover': {textDecoration: 'none'}, padding: '6px 12px'}
 };
 
 function isActivePage(currentPage, pageNumber) {
@@ -25,13 +26,17 @@ export default function Pagination({totalPages, currentPage}) {
       {
         Array
           .from({length: totalPages}, (_, index) => ({pageNumber: index + 1}))
-          .map(({pageNumber}) => (
-            <li key={`page-${pageNumber}`} css={{backgroundColor: highlightWhenActive(currentPage, pageNumber)}}>
-              <InternalLink to={1 === pageNumber ? '/archive' : `/archive/page-${pageNumber}`}>
-                {`${pageNumber}`}
-              </InternalLink>
-            </li>
-          ))
+          .map(({pageNumber}) => {
+            const pageStyles = {backgroundColor: highlightWhenActive(currentPage, pageNumber)};
+
+            return (
+              <li key={`page-${pageNumber}`} css={pageStyles}>
+                <InternalLink to={1 === pageNumber ? '/archive' : `/archive/page-${pageNumber}`}>
+                  {`${pageNumber}`}
+                </InternalLink>
+              </li>
+            );
+          })
       }
     </ol>
   );
