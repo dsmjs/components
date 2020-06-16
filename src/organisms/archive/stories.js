@@ -40,7 +40,7 @@ export default {
   ]
 };
 
-export const Default = () => <Archive meetings={meetings} />;
+export const Default = () => <Archive meetings={meetings} totalPages={any.integer({max: 20})} />;
 
 Default.story = {
   name: 'default'
