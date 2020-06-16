@@ -1,6 +1,6 @@
 import React from 'react';
 import {arrayOf, shape, string} from 'prop-types';
-import ArchiveListItem from '../../atoms/archive-list-item';
+import ArchiveListItem from '../../../atoms/archive-list-item';
 
 export default function ArchiveList({meetings}) {
   return (

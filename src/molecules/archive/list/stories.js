@@ -3,7 +3,7 @@ import React from 'react';
 import any from '@travi/any';
 import storyRouter from 'storybook-router';
 import {linkTo} from '@storybook/addon-links';
-import ArchiveList from './index';
+import ArchiveList from '.';
 
 const meetings = [
   {
@@ -27,7 +27,7 @@ const meetings = [
 ];
 
 export default {
-  title: 'Molecules/Archive',
+  title: 'Molecules/Archive/List',
 
   decorators: [
     storyRouter({

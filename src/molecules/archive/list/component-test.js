@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {assert} from 'chai';
 import any from '@travi/any';
-import ArchiveList from '.';
+import ArchiveList from './component';
 
 suite('archived meetings list molecule', () => {
   test('that the meetings are listed', () => {

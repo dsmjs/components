@@ -1,7 +1,7 @@
 import React from 'react';
 import {arrayOf, shape} from 'prop-types';
 import PageHeading from '../../atoms/headings/page';
-import ArchiveList from '../../molecules/archive';
+import ArchiveList from '../../molecules/archive/list';
 
 export default function Archive({meetings}) {
   return (
