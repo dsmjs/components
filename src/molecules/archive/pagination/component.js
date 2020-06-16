@@ -1,5 +1,6 @@
 import React from 'react';
 import {number} from 'prop-types';
+import InternalLink from '../../../atoms/links/internal';
 
 const listStyles = {
   listStyleType: 'none',
@@ -16,7 +17,11 @@ export default function Pagination({totalPages}) {
       {
         Array
           .from({length: totalPages}, (_, index) => ({pageNumber: index + 1}))
-          .map(({pageNumber}) => <li key={`page-${pageNumber}`}>{pageNumber}</li>)
+          .map(({pageNumber}) => (
+            <li key={`page-${pageNumber}`}>
+              <InternalLink to={`/archive/page-${pageNumber}`}>{`${pageNumber}`}</InternalLink>
+            </li>
+          ))
       }
     </ol>
   );
