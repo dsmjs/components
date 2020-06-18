@@ -37,6 +37,14 @@ Default.story = {
   name: 'default'
 };
 
+export const WithMarkdownInTitle = () => (
+  <Talk talk={{...talk, title: 'This is a `title` with _markdown_'}} content={talkContent} />
+);
+
+WithMarkdownInTitle.story = {
+  name: 'w/ markdown in title'
+};
+
 export const NoTwitter = () => <Talk talk={talkNoTwitter} content={talkContent} />;
 
 NoTwitter.story = {

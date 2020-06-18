@@ -1,13 +1,14 @@
 import React from 'react';
 import {string, shape} from 'prop-types';
 import SpeakerSocialIcons from '../../atoms/social/speaker';
+import {markdown} from '../../formatters';
 
 export default function Talk({talk, content}) {
   const {github, twitter, name: speakerName} = talk.speaker.frontmatter;
 
   return (
     <>
-      <h1 css={{color: '#AD5472'}}>{talk.title}</h1>
+      <h1 css={{color: '#AD5472'}}>{markdown(talk.title)}</h1>
       <h3 css={{display: 'flex', alignItems: 'center'}}>
         <span>{speakerName}</span>
         <small><SpeakerSocialIcons github={github} twitter={twitter} /></small>
