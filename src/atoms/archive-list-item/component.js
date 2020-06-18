@@ -1,6 +1,7 @@
 import React from 'react';
 import {arrayOf, shape, string} from 'prop-types';
 import InternalLink from '../links/internal';
+import {markdown} from '../../formatters';
 
 export default function ArchiveListItem({meeting}) {
   const meetingDetails = meeting.node.frontmatter;
@@ -9,7 +10,7 @@ export default function ArchiveListItem({meeting}) {
     <>
       <h4><InternalLink to={meeting.node.fields.slug}>{meetingDetails.date}</InternalLink></h4>
       <ol css={{listStyle: 'none', li: {marginBottom: 15}}}>
-        {meetingDetails.talks.map(talk => <li key={talk.talk.frontmatter.title}>{talk.talk.frontmatter.title}</li>)}
+        {meetingDetails.talks.map(({talk: {frontmatter: {title}}}) => <li key={title}>{markdown(title)}</li>)}
       </ol>
     </>
   );

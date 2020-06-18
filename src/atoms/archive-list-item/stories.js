@@ -10,7 +10,10 @@ const meeting = {
     fields: {slug: '/meeting-1'},
     frontmatter: {
       date: any.date(),
-      talks: [{talk: {frontmatter: {title: any.sentence()}}}]
+      talks: [
+        {talk: {frontmatter: {title: any.sentence()}}},
+        {talk: {frontmatter: {title: 'This is a `title` with _markdown_'}}}
+      ]
     }
   }
 };
