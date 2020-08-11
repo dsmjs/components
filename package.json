@@ -55,7 +55,7 @@
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@percy/storybook": "3.3.0",
     "@storybook/addon-actions": "^5.2.4",
-    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addon-links": "^6.0.2",
     "@storybook/react": "^5.2.4",
     "@travi/any": "2.0.10",
     "babel-loader": "^8.0.6",
