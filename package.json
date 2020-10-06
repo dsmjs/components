@@ -61,7 +61,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "chai": "^4.2.0",
-    "codecov": "3.7.2",
+    "codecov": "3.8.0",
     "commitlint-config-dsmjs": "1.0.21",
     "cz-conventional-changelog": "3.3.0",
     "enzyme": "3.11.0",
