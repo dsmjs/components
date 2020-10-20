@@ -4,3 +4,4 @@ repository:
   description: React components for the dsmjs.com site
   homepage: 'https://components.dsmjs.com/'
   private: false
+  topics: hacktoberfest
