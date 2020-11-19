@@ -57,7 +57,7 @@
     "@storybook/addon-actions": "^6.0.3",
     "@storybook/addon-links": "^6.0.2",
     "@storybook/react": "^6.0.3",
-    "@travi/any": "2.0.13",
+    "@travi/any": "2.0.14",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "chai": "^4.2.0",
