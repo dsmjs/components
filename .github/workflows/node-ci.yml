@@ -59,7 +59,7 @@ jobs:
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - uses: bahmutov/npm-install@v1
-      - run: npm run deploy:netlify
+      - run: npm run deploy:netlify -- --prod
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
