@@ -25,7 +25,7 @@
     "build:js": "rollup --config",
     "build": "run-s clean build:*",
     "build:storybook": "build-storybook --quiet",
-    "presnapshot": "run-s build:storybook",
+    "presnapshot": "ANY_SEED=452204917091.8763 run-s build:storybook",
     "snapshot": "percy-storybook --widths=320,1280",
     "predeploy:netlify": "run-s build:storybook",
     "deploy:netlify": "netlify deploy --dir=./storybook-static",
