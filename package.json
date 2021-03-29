@@ -61,7 +61,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "chai": "^4.2.0",
     "codecov": "3.8.1",
-    "commitlint-config-dsmjs": "1.0.24",
+    "commitlint-config-dsmjs": "1.0.25",
     "cz-conventional-changelog": "3.3.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
