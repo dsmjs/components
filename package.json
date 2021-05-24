@@ -79,7 +79,7 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "5.2.0",
-    "sinon": "^10.0.0",
+    "sinon": "^11.0.0",
     "storybook-router": "0.3.4",
     "validate-commit-msg": "2.14.0",
     "webpack": "^4.41.1"
