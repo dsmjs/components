@@ -9,7 +9,6 @@ React components for the [dsmjs.com](https://dsmjs.com) site
 
 <!--status-badges end -->
 
-
 ## Usage
 
 <!--consumer-badges start -->
@@ -81,7 +80,7 @@ $ npm test
 ```
 
 :eyes: __Note__: The verification script is executed automatically as a
-[`pre-commit` hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks#_committing_workflow_hooks).
+[`pre-commit` hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks#\_committing_workflow_hooks).
 We leverage [husky](https://github.com/typicode/husky) to configure git hooks
 like this automatically for you.
 
