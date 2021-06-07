@@ -50,7 +50,7 @@
     "@dsmjs/babel-preset": "1.0.58",
     "@dsmjs/eslint-config": "1.0.77",
     "@dsmjs/eslint-config-mocha": "1.0.13",
-    "@dsmjs/eslint-config-react": "1.1.43",
+    "@dsmjs/eslint-config-react": "1.1.58",
     "@dsmjs/remark-preset-lint": "1.0.15",
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@percy/storybook": "3.3.1",
