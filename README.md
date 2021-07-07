@@ -84,14 +84,6 @@ $ npm test
 We leverage [husky](https://github.com/typicode/husky) to configure git hooks
 like this automatically for you.
 
-## Sponsorship
-
-We've been sponsored with a plan from [Percy](https://percy.io/) so that we can
-use their great visual testing tool with this project. Be sure to take a look at
-how the integration with [PRs](https://github.com/dsmjs/components/pulls) to
-this project works. We're using the [Storybook for React integration](https://docs.percy.io/docs/storybook-for-react),
-which makes adding and managing the benefits of Percy incredibly easy.
-
 [commit-convention-link]: https://conventionalcommits.org
 
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
