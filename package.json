@@ -97,6 +97,6 @@
     "react-use": "^17.0.1",
     "remark-parse": "^10.0.0",
     "remark-react": "^8.0.0",
-    "unified": "^9.2.2"
+    "unified": "^10.1.0"
   }
 }
