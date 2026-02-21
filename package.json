@@ -83,7 +83,7 @@
     "sinon": "^14.0.0",
     "storybook-router": "0.3.4",
     "validate-commit-msg": "2.14.0",
-    "webpack": "^4.41.1"
+    "webpack": "^5.105.2"
   },
   "peerDependencies": {
     "react": "^16.0.0",
